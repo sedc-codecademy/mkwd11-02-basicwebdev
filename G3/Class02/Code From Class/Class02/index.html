@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ! + Tab -> Generate Default HTML Structure -->
+
+    <!-- Headings -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <hr>
+
+    <!-- Paragraph -->
+    <!-- 
+        lorem + number ex. lorem30 
+        -> Generates 30 random words (for testing purposes) 
+    -->
+    <p>
+        This is some very very long paragraph...
+    </p>
+    <p>
+        This is the second very very long paragraph..
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tempora, iure voluptate quisquam
+        molestias molestiae in velit non reiciendis dolorum tempore quibusdam at sapiente deleniti consectetur ratione
+        ut qui accusamus!
+    </p>
+
+    <hr>
+
+    <!-- Lists -->
+
+    <!-- Ordered list -->
+    <!-- type="(1(default) | A | a | I | i)" -->
+    <!-- start -->
+    <!-- reversed -->
+    <ol type="1" start="15" reversed>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C#</li>
+        <li>SQL</li>
+    </ol>
+
+
+    <!-- Unordered list -->
+    <!-- type="(bullet(default) |circle | square | none)"  -->
+    <ul type="square">
+        <li>Flour</li>
+        <li>Eggs</li>
+        <li>Chocolate</li>
+        <li>Bread</li>
+    </ul>
+
+
+    <!-- Description list -->
+    <dl>
+        <dt>HTML</dt> <!-- Data Term -->
+        <dd>A Markup Language</dd> <!-- Data Description -->
+        <dt>JavaScript</dt>
+        <dd>A Scripting Language</dd>
+        <dt>SQL</dt>
+        <dd>A Query Language</dd>
+    </dl>
+
+
+    <!-- Nested Lists -->
+    <h2>SEDC Academy For Programming</h2>
+
+    <ul>
+        <!-- start of main list -->
+        <li><i>Frontend</i>
+            <ol>
+                <!-- start of nested list -->
+                <li>Basic Web Development</li>
+                <li>JavaScript</li>
+            </ol> <!-- end of nested list -->
+        </li>
+        <li><b>Backend</b>
+            <ol>
+                <!-- start of nested list -->
+                <li>C#
+                    <ul>
+                        <!-- start of 2nd nested list -->
+                        <li>Basic C#</li>
+                        <li>Advance C#</li>
+                    </ul> <!-- end of 2nd nested list -->
+                </li>
+                <li>SQL</li>
+                <li>ASP.NET</li>
+            </ol> <!-- end of nested list -->
+        </li>
+    </ul> <!-- end of main list -->
+
+    <hr>
+
+    <!-- Inline Text Formatting Elements -->
+
+    <!-- Single -->
+    <p>This text is <b>BOLD</b></p>
+    <p>This text is <i>ITALIC</i></p>
+    <p>This text is <u>UNDERLINED</u></p>
+
+    <!-- Mix -->
+    <p>This text is <b><i>BOLD AND ITALIC</i></b></p>
+    <p>This text is <b><i><u>BOLD, ITALIC and UNDERLINED</u></i></b></p>
+
+    <p>This text is <sup>superscripted</sup></p>
+    <p>Example: 5<sup>2</sup></p>
+
+    <p>This text is <sub>subscripted</sub></p>
+    <p>Example: H<sub>2</sub>O</p>
+
+    <!-- Horizontal Rule -->
+    <!-- Adds horizontal line -->
+    <!-- Used to devide / separate sections -->
+    <hr>
+
+    <!-- Self-Closing Tags -->
+    <!-- New Lines -->
+    <!-- Breaks Line, Content that follows drop is new line -->
+    <!-- Both <br /> and <br> are valid HTML5 tags -->
+    <br />
+    <br />
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <br>Asperiores ab sunt nisi doloribus corporis rerum vel
+        neque optio hic quam?
+    </p>
+
+    <hr>
+
+    <!-- White space collapsing -->
+    <!-- Browsers behavoir -->
+    <p>This is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; white space collapsing.</p>
+    <p>This
+        is
+        white
+        space
+        collapsing
+    </p>
+
+    <hr>
+
+    <!-- Strong & Emphasis -->
+    <p>
+        <strong>Lorem ipsum</strong>, dolor sit amet consectetur adipisicing elit. Corporis vero rem facere officiis
+        <em>numquam</em>! Nihil blanditiis debitis impedit deleniti repudiandae?
+    </p>
+
+    <hr>
+
+    <!-- Quotations -->
+    <p>Here is quote from Wikipedia's website:</p>
+    <blockquote cite="https://en.wikipedia.org/wiki/HTML">
+        The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in
+        a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages
+        such as JavaScript.
+    </blockquote>
+
+    <!-- Inline Quote -->
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, iure vero eaque, at sint neque impedit, culpa
+        aperiam aliquid doloribus cupiditate autem ea atque? Enim, similique deleniti. Aspernatur illo animi, sequi
+        molestias architecto totam exercitationem voluptatum, officia sed ipsa consequuntur eum minima nam perspiciatis
+        odit, in eveniet dolor mollitia dolorum. <q>HTML is fun</q>, said Angel
+    </p>
+
+    <p><q>HTML is fun</q>, said Angel</p>
+
+    <hr>
+
+    <!-- Abbrevations & Acronyms -->
+    <p>
+        <abbr title="Professor">Prof.</abbr> Stephan Hawking
+    </p>
+
+    <hr>
+
+    <!-- Changes to Content -->
+    <p>This text is <ins>Inserted</ins></p>
+    <p>This text is <del>Deleted</del></p>
+    <p>My favourite color is <del>blue</del> <ins>red</ins>!</p>
+    
+    <hr>
+
+    <!-- Side Comments or Small Print -->
+    <p><small>All Rights Reserved. SEDC 2022 &copy;</small></p>
+
+</body>
+
+</html>
