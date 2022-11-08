@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Username" value="Jovan" name="username" id="username" />
+        </div>
+        <div>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" />
+        </div>
+        <div>
+
+            <label for="comments">What did you think of this gig?</label>
+            <textarea id="comments" name="comments" cols="10" rows="5">
+                Comments go here!
+            </textarea>
+        </div>
+        <div>
+            Radio buttons
+            <input type="radio" name="genre" checked value="rock" id="rock" /> 
+            <label for="rock">Rock</label>
+            <input type="radio" name="genre" value="pop" id="pop" />
+            <label for="pop">Pop</label>
+            <input type="radio" name="genre" value="jazz" id="jazz" />
+            <label for="jazz">Jazz</label>
+        </div>
+
+        <p>Please select your favorite music service(s):</p>
+
+        <input type="checkbox" name="service"
+        value="itunes" checked="checked" id="itunes" />
+        <label for="itunes">iTunes</label>
+        <input type="checkbox" name="service"
+        value="lastfm" id="lastfm" />
+        <label for="lastfm">Last.fm</label>
+        <input type="checkbox" name="service"
+        value="spotify" id="spotify" />
+        <label for="spotify">Spotify</label>
+        <div></div>
+        <label for="devices">What device do you listen to music on?</label>
+        <select name="devices" id="devices" multiple>
+            <option value="ipod" selected>iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+        <button type="submit">
+            Submit
+        </button>
+        <button type="reset">
+            Reset
+        </button>
+    </form>
+</body>
+
+</html>
