@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" placeholder="Insert your username..."   value="Here is the default value"/>
+        <br>
+        <label for="pass">Password:</label>
+        <input type="password" name="password" id="pass" />
+        <br>
+        <label for="comment">Comment:</label>
+        <textarea name="comment" id="comment" rows="5" cols="50" maxlength="250"></textarea>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" />
+    
+        <p>Please select your gender:</p>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Female</label>
+
+        <p>Please select your favourite subject:</p>
+        <input type="checkbox"  value="HTML" id="html" name="subjects"/>
+        <label for="html">HTML</label>
+        <input type="checkbox"  value="JS" id="js" name="subjects"/>
+        <label for="js">JS</label>
+        <input type="checkbox"   value="C#" id="c#" name="subjects"/>
+        <label for="c#">C#</label>
+        <input type="submit" value="SUBMIT" />
+    </form>
+</body>
+</html>

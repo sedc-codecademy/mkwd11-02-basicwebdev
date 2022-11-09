@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tables</title>
+  </head>
+  <body>
+    <h1>Today we are learning HTML tables</h1>
+
+    <!-- Tables basic syntax -->
+    <h2>Basic table structure</h2>
+    <table border="1" cellpadding="5" cellspacing="10">
+      <tbody>
+        <!-- Here in between the tbody element we will put most of our code-->
+
+        <!-- Each <tr> </tr> is actually each table ROW in our table =) -->
+
+        <!-- Table row 1 -->
+        <tr>
+          <!-- <td> </td> is each COLUMN in the table row -->
+          <td>Row 1, Column 1</td>
+          <td>Row 1, Column 2</td>
+        </tr>
+
+        <!-- Table row 2-->
+        <tr>
+          <td>Row 2, Column 1</td>
+          <td>Row 2, Column 2</td>
+        </tr>
+
+        <!-- Table row 3-->
+        <tr>
+          <td>Row 3, Column 1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+
+    <!-- Table 2 -->
+
+    <table border="1" cellpadding="10" cellspacing="10">
+      <caption>
+        Colspan example table
+      </caption>
+
+      <thead>
+        <!-- FIRST ROW -->
+        <tr>
+          <!-- <th> </th> is the same as <td> </td>, but the text is bolder -->
+          <!-- <th>First name</th>
+          <th>Last name</th> -->
+          <th colspan="2">Fullname</th>
+          <th>Hobbies</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- SECOND ROW -->
+        <tr>
+          <!-- First cell/column -->
+          <td>John</td>
+          <!-- Second cell/column -->
+          <td>Doe</td>
+          <!-- Third cell/column -->
+          <td>Reading</td>
+        </tr>
+
+        <!-- THIRD ROW -->
+        <tr>
+          <!-- First cell/column -->
+          <td>Bob</td>
+          <!-- Second cell/column -->
+          <td>Bobski</td>
+          <!-- Third cell/column -->
+          <td>Coding</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+
+    <!-- ROW SPAN -->
+
+    <table border="1" cellspacing="10" cellpadding="8">
+      <caption>
+        Row span
+      </caption>
+
+      <thead>
+        <!-- FIRST ROW -->
+        <tr>
+          <th>Name</th>
+          <td>John Doe</td>
+          <td>Bob Bobski</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- SECOND ROW -->
+        <tr>
+          <!-- FIRST COLUMN -->
+          <th rowspan="2">Social networks</th>
+          <!-- SECOND COLUMN -->
+          <td>john facebook url</td>
+          <td>bob bobski facebook url</td>
+        </tr>
+        <!-- THIRD ROW -->
+        <tr>
+          <td>john instagram url</td>
+          <td>bob bobski instagram url</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+
+    <h2>More complete structure</h2>
+    <table border="1" cellpadding="10" cellspacing="10">
+      <caption>
+        My todolist
+      </caption>
+
+      <!-- Table header -->
+      <thead>
+        <!-- First row -->
+        <tr>
+          <th>Days</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thurday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+      </thead>
+
+      <!-- Table body -->
+      <tbody>
+        <!-- Second row -->
+        <tr>
+          <th>Morning</th>
+          <td>Make bed</td>
+          <td>Do Yoga</td>
+          <td>Go to the park</td>
+          <td colspan="2" rowspan="2">Walk the dog/cat</td>
+          <td>Make protein pancakes</td>
+          <td rowspan="2">Man it is day off I do not care</td>
+        </tr>
+        <!-- Third row -->
+        <tr>
+          <th>Before work</th>
+          <td>Make a tea</td>
+          <td>Wash the dishes</td>
+          <td>Practice</td>
+          <td>Call our best friend</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
