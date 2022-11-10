@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <h3>Forms</h3>
+
+    <!-- as a value in action we put the address 
+    of the "place" where the values of the form will land =)  -->
+
+    <!-- Basic form -->
+    <form method="POST">
+      <!-- Input is self closing tag =) -->
+      <!-- this is a input text form control -->
+      <label for="userName">Enter username:</label>
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        placeholder="Please Enter username: "
+      />
+      <br />
+      <br />
+      <!-- this is a input password form control -->
+      <label for="userPassword">Enter password:</label>
+      <input
+        type="password"
+        name="userPassword"
+        id="userPassword"
+        placeholder="Plase Enter password:"
+      />
+
+      <br />
+      <!-- this is an input submit form control =) -->
+      <!-- if we do not specify a value inside the value attribute, 
+        the value of the button is going to be SUBMIT -->
+      <input type="submit" value="LOGIN" />
+    </form>
+    <hr />
+    <br />
+    <br />
+
+    <!-- Multiple radio buttons -->
+    <form>
+      <h3>What do you prefer?</h3>
+
+      <label for="iphone">Iphones</label>
+      <input type="radio" name="prefferedPhone" id="iphone" />
+
+      <label for="samsung">Samsung phones</label>
+      <input type="radio" name="prefferedPhone" id="samsung" />
+
+      <label for="huawei">Huawei</label>
+      <input type="radio" name="prefferedPhone" id="huawei" />
+    </form>
+
+    <hr />
+    <br />
+    <br />
+
+    <!-- Date picker -->
+    <form>
+      <label for="birthday">Enter your birthday: </label>
+      <input type="date" name="birthday" id="birthday" />
+    </form>
+
+    <hr />
+    <br />
+    <br />
+
+    <!-- Color picker -->
+    <form>
+      <label for="colorPicker">Pick your favourite color:</label>
+      <input type="color" name="colorPicker" id="colorPicker" />
+    </form>
+
+    <hr />
+    <br />
+    <br />
+
+    <!-- Checkboxes -->
+    <form>
+      <h4>Please select your preffered fruit:</h4>
+      <br />
+
+      <!-- Each input element has the value attribute -->
+      <!-- Currently in html it wont make big difference if we have it or not,
+      it will be imporant in JS -->
+
+      <input type="checkbox" id="banana" value="bananas" />
+      <label for="banana">Banana</label>
+
+      <input type="checkbox" id="strawberries" value="fresh strawberries" />
+      <label for="strawberries">Strawberries</label>
+
+      <!-- checked attribute will PRE-CHECK the input value =) -->
+      <input type="checkbox" id="pineapple" checked="checked" />
+      <label for="pineapple">Pineapple</label>
+    </form>
+
+    <hr />
+    <br />
+    <br />
+    <!-- Select -->
+    <form>
+      <label for="steamingPlatform"
+        >What is your favourite streaming platform?</label
+      >
+      <select id="steamingPlatform" name="steamingPlatform">
+        <option>Twitch</option>
+        <option>Youtube</option>
+        <option selected="selected">Nvidia</option>
+        <option>Other</option>
+      </select>
+    </form>
+
+    <hr />
+    <br />
+    <br />
+    <!-- Our contact form -->
+    <form>
+      <fieldset>
+        <legend>User info</legend>
+
+        <label for="fName">First name:</label>
+        <input type="text" id="fName" name="fName" required />
+        <br />
+        <label for="pass">Password:</label>
+        <!-- we can use the inline html validation with most of the form controls -->
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          minlength="8"
+          maxlength="10"
+          required
+        />
+        <br />
+        <label for="bDate">Enter your birth date:</label>
+        <input type="date" id="bDate" name="bDate" />
+      </fieldset>
+
+      <br />
+      <fieldset>
+        <legend>User's extra information</legend>
+        <label for="userComments">Please provide additional comments:</label>
+        <textarea id="userComments" name="userComments"></textarea>
+      </fieldset>
+
+      <input type="submit" value="Sign up" />
+      <input type="reset" value="Reset Form" />
+    </form>
+  </body>
+</html>
