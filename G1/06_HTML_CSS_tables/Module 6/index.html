@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <h1>Tables</h1>
+    <table border="1px solid" cellpadding="16px" cellspacing="16px">
+      <caption>
+        Student Table
+      </caption>
+      <thead>
+        <th>#</th>
+        <th>Name</th>
+        <th>Age</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ivan</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>John</td>
+          <td>50</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table border="2px solid" cellpadding="8px" cellspacing="8px">
+      <thead>
+        <th>No.</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="1">1</td>
+          <td colspan="2">Basic Web Dev</td>
+          <td colspan="3">Basic JS</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td colspan="2">Basic Databases</td>
+          <td colspan="2">Advanced JS</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td colspan="5">Basic C#</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table border="1" cellpadding="16px">
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td style="background-color: blue" colspan="2" rowspan="2"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td colspan="2" rowspan="2" style="background-color: red"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    
+    <!-- Hint -->
+    <!-- 
+    Start the table with all the cells in place.
+    This means count the number of total rows and columns and start from there. 
+    In our homework's case, this is 11x11.
+    So, make 11 tr tags, and within each of them, you can add 11 td tags.
+    After this, start from the top and set up the colspan and rowspan properties in one tr row while also deleting the unnecessary td cells in the row below that one. -->
+
+    <table border="2px solid black" cellpadding="16px">
+      <tbody>
+        <tr id="row-1">
+          <td></td>
+          <td></td>
+          <td colspan="2" rowspan="2"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td colspan="2" rowspan="2"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="row-2">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="row-3">
+          <td colspan="4" rowspan="2"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td colspan="4" rowspan="2"></td>
+        </tr>
+        <tr id="row-4">
+          <td></td>
+          <td></td>
+          <td></td>         
+        </tr>
+        <tr id="row-5">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
