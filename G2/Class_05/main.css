@@ -1,0 +1,36 @@
+p {
+    color: blue;
+}
+
+h1 {
+    background-color: rgb(73, 75, 79);
+}
+
+#ove-e-id {
+    text-transform: lowercase;
+}
+
+h2 .crvena {
+    background-color: red;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+h1+p {
+    color: red;
+}
+
+input[type="text"] {
+    color: red;
+}
+
+
+p{
+    background-color: blue;
+}
+
+p{
+    background-color: red !important;
+}

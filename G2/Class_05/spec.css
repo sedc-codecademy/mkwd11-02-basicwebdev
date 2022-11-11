@@ -1,0 +1,51 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+i {
+    color: green;
+}
+
+i {
+    color: red;
+}
+
+b {
+    color: pink;
+}
+
+p b {
+    color: blue !important;
+}
+
+p b {
+    color: violet;
+}
+
+p#intro {
+    font-size: 100%;
+}
+
+p {
+    font-size: 75%;
+}
+
+p .crveno {
+    color: red;
+}
+
+p .zeleno {
+    color: green;
+}
+
+p>.plavo {
+    color: blue;
+}
+
+.parent .child {
+    color: beige;
+}
