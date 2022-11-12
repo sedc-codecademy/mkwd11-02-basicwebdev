@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons form</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>My first form</legend>
+        <label for="firstName">First name:</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="John"
+          required
+        />
+        <br />
+        <label for="lastName">Last name:</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Doe"
+          required
+        />
+        <br />
+        <input type="date" name="birthdate" id="birthdate" />
+        <br />
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@company.com"
+          required
+        />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+        <br />
+        <label for="confirmPassword">Confirm password:</label>
+        <input
+          type="password"
+          name="confirmPassword"
+          id="confirmPassword"
+          required
+        />
+        <br />
+        <br />
+        <input type="submit" value="Register" />
+        <input type="reset" value="Reset Form" />
+        <input type="hidden" value="someValue" id="someId" />
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <form action="" method="get">
+      <input type="search" name="find" id="find" placeholder="Search" />
+    </form>
+  </body>
+</html>
