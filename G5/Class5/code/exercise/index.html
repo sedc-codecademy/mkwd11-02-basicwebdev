@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form Exercise</title>
+    </head>
+    <body>
+        <form style="width: 300px">
+            <fieldset>
+                <legend>Exercise form</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <br>
+                <label for="pass">Passoword</label>
+                <input type="password">
+
+                <span>Gender</span>
+                <br>
+                <input type="radio" id="m" name="gender">
+                <label for="m">Male</label>
+                <br>
+                <input type="radio" id="f" name="gender">
+                <label for="f">Female</label>
+
+                <br>
+                <label for="continent">Continent</label>
+                <select>
+                    <option value="" selected disabled>Please select a continent</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">Africa</option>
+                    <option value="america">America</option>
+                </select>
+                <br>
+                <span>Meals</span>
+                <br>
+                <input type="checkbox" id="breakfast">
+                <label for="breakfast">breakfast</label>
+                <br>
+                <input type="checkbox" id="lunch">
+                <label for="lunch">lunch</label>
+                <br>
+                <input type="checkbox" id="diner">
+                <label for="diner">diner</label>
+
+                <label for="comment">Remark</label>
+                <textarea id="comment" cols="20" rows="5"></textarea>
+
+                <br>
+                <input type="submit" value="send">
+                <input type="reset" value="cancel">
+
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1>Forms</h1>
+
+        <form>
+            <!--Text inputs-->
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Username">
+            <!-- prevent entering data inside the input field [disabled]-->
+            <input placeholder="Enter your name" disabled id="name" name="name" value="Pane">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Password" id="password" name="pass">
+            <br>
+            <br>
+            <label for="comment"> Your comment:</label>
+            <textarea rows="5" cols="25" id="comment"></textarea>
+
+            <!-- radio buttons-->
+            <p>Choose your favorite type of music</p>
+            <input type="radio" name="genre" id="rock">
+            <label for="rock">Rock</label>
+            <br>
+            <input type="radio" name="genre" id="pop">
+            <label for="pop">Pop</label>
+            <br>
+            <input type="radio" name="genre" id="jazz">
+            <label for="jazz">Jazz</label>
+
+            <!--checkbox-->
+            <p>Select your fav music service</p>
+            <input type="checkbox" name="service" id="itunes">
+            <label for="itunes">Itunes</label>
+            <input type="checkbox" name="service" id="spotify">
+            <label for="spotify">Spotify</label>
+            <br>
+            <br>
+
+            <!--Dropdown List / Select-->
+            <label for="cities">Cities</label>
+            <select id="cities">
+                <option value="sk">Skopje</option>
+                <option value="ve">Veles</option>
+                <option value="">Bitola</option>
+                <option value="">Kratovo</option>
+                <option selected value="">Kavadarci</option>
+            </select>
+
+            <!--Dropdown List / Select-->
+            <label for="multi-cities">Cities</label>
+            <select id="multi-cities" multiple size="3">
+                <option value="sk">Skopje</option>
+                <option value="ve">Veles</option>
+                <option value="">Bitola</option>
+                <option value="">Kratovo</option>
+                <option selected value="">Kavadarci</option>
+            </select>
+            <br>
+            <!--upload file-->
+            <label for="profile-img">Upload image here:</label>
+            <input type="file" id="profile-img">
+
+            <!--HTML5 inputs-->
+
+            <br>
+            <input type="email" id="email" placeholder="Enter email here">
+            <input type="date">
+            <input type="hidden">
+
+            <!-- submit button-->
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset btn">            
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Contact details:</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="email" required id="email">
+                <input type="submit">
+
+            </fieldset>    
+        </form>
+    </body>
+</html>
