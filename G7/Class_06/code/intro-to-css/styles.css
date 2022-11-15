@@ -1,0 +1,15 @@
+.welcomeMessage {
+  color: aqua;
+}
+/* SELECTING BY CLASS */
+.todoList {
+  color: chocolate;
+}
+/* SELECTING BY ID */
+#practiceCoding {
+  font-style: italic;
+}
+/* SELECTING BY TYPE (BY THE NAME OF THE ELEMENT)  */
+li {
+  font-weight: bolder;
+}

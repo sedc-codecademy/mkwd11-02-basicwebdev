@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Comments in css */
+      /* EMBEDED-STYLING */
+      nav {
+        border: 1px solid red;
+        height: 40px;
+        text-align: center;
+      }
+      a {
+        color: turquoise;
+      }
+
+      #publishEvents {
+        color: blueviolet;
+      }
+
+      #myHeader {
+        border: 1px solid red;
+        color: black;
+      }
+      #costumParagraph {
+        color: blue;
+      }
+      .redText {
+        color: red;
+      }
+    </style>
+
+    <!-- CONNECTING THE EXTERNAL CSS FILE -->
+    <!-- THIS IS THE BEST PRACTICE OF WRITING OUR CSS -->
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header id="myHeader">
+      <nav>
+        <a href="">Home</a>
+        <a href="">Browse events</a>
+        <a href="" id="publishEvents">Save/Publish Events</a>
+      </nav>
+    </header>
+
+    <br /><br /><br />
+
+    <!-- INLINE-STYLING -->
+    <!-- the broder css property expects: thickness (1px) type of the border (solid, dashed) color of the border (red) -->
+    <!-- First article -->
+    <article style="border: 1px solid grey">
+      <!-- the declarion is composed of key value pair 
+      separated by colon. The key is actually the CSS property we 
+      want to style =). And the value is the style that will be applied -->
+      <h2 style="color: red; font-size: 35px; border: 1px solid grey">
+        Welcome user to our website! =)
+      </h2>
+      <h3>We are this and that...</h3>
+      <p style="opacity: 60%">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
+        molestiae.
+      </p>
+    </article>
+
+    <!-- Second article -->
+    <article>
+      <p id="costumParagraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, vitae?
+      </p>
+      <!-- DONT USE SAME ID, ID MUST BE UNIQUE -->
+      <!-- <p id="costumParagraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, vitae?
+      </p> -->
+      <p class="redText">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
+        voluptate ex incidunt dignissimos saepe adipisci, cupiditate possimus
+        eum! Nostrum, saepe.
+      </p>
+      <p class="redText">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
+        voluptate ex incidunt dignissimos saepe
+      </p>
+      <p class="redText">Lorem ipsum dolor sit amet</p>
+    </article>
+    <br />
+    <hr />
+
+    <!-- EXTERNAL CSS USAGE -->
+    <main>
+      <h1 class="welcomeMessage">This heading is styled by external css =)</h1>
+      <!-- Todo list section -->
+      <section>
+        <ul class="todoList">
+          <li>Walk the dog</li>
+          <li>Go to the gym</li>
+          <li id="practiceCoding">Practice coding</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
