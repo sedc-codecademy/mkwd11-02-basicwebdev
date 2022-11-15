@@ -1,0 +1,43 @@
+* {
+    color: green
+}
+/* div {
+    height: 200px;
+    width: 400px;
+    background-color: red;
+} */
+
+h1, h2, h3 {
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.myClass {
+    color: yellow;
+}
+
+h2.myClass {
+    font-size: 64px;
+}
+
+#heading {
+    font-family: cursive;
+}
+
+#myDiv > p {
+    color: orange;
+}
+
+#myDiv p {
+    color: orange;
+}
+
+
+
+#myDiv~p {
+    color: blueviolet;
+}
+
+#test {
+    color: green
+}
