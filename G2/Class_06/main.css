@@ -1,0 +1,49 @@
+@font-face{
+    src: url(fonts/NotoSansMendeKikakui-Regular.ttf) format("ttf");
+    font-family: NotoSans;
+}
+*{
+   font-family: 'NotoSans';
+   font-weight: 400;
+}
+.red {
+    color: red;
+    text-decoration: dashed;
+    pointer-events: auto;
+    font-size: 30px;
+}
+a{
+    pointer-events: none;
+    background-color: red;
+    background: red;
+    background: rgb(133, 141, 48);
+}
+
+input[type="checkbox"]{
+color: blue;
+
+}
+span .large{
+    color: black;
+}
+
+.new{
+    color: green;
+}
+
+p > .blue{
+    color:aliceblue
+}
+
+.btn{
+    display: block;
+    padding: 1rem;
+    color:aqua;
+}
+
+.btn-special{
+    color:rgb(75, 118, 227);
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
