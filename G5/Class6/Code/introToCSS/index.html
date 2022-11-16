@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Css intro</title>
+
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+        <!--Internal css/ embedded-->
+        <style>
+            h1, h3 {
+                color: purple;
+                /* background-color: red; */
+            }
+            p {
+                color: blue ;
+            }
+        </style>
+
+        <!--Exteranal css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!--Internal css/ inline-->
+        <h1 style="text-align:center; padding-bottom: 30px;">CSS Introduction</h1>
+        <h3 style="color:red">Our first css code</h3>
+        <p id="paragraph01" class="italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, dicta cumque modi eaque ducimus esse nam. Dignissimos alias id aliquam commodi numquam totam minima. Adipisci fugit laudantium suscipit nulla quo?</p>
+        <p class="italic bold"><strong>Lorem</strong> ipsum dolor, sit amet consectetur adipisicing elit. Sint, nobis dolorem. Doloribus nobis officia similique, quo rem, dolor eligendi porro necessitatibus praesentium ullam voluptatum obcaecati nam, at nemo saepe unde?</p>
+    
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a> 
+                    <ul>
+                        <li class="greenItem">Item 3</li>
+                        <li class="greenItem">Item 4</li>
+                    </ul> 
+                </li>
+            </ul>
+        </nav>
+    
+    </body>
+</html>

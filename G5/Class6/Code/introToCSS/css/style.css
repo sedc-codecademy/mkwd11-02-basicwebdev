@@ -1,0 +1,77 @@
+/* style.css */
+
+/*Univerlas selector */
+* {
+    font-family: Arial;
+}
+
+/* Type (tag) selector  */
+p {
+    color: red;
+}
+
+
+/*Class selector */
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* LAST RULE */
+p {
+    color: green;
+}
+
+#paragraph01 {
+    font-size: 22px;
+    color: red;
+}
+
+
+/* Child selector */
+nav > ul {
+    background-color: rgb(209, 62, 194);
+}
+
+/*Descended  selector */
+nav a {
+    color: green;
+}
+
+nav li {
+    color:aqua;
+}
+
+nav li li {
+    color: yellowgreen;
+}
+
+/* .greenItem {
+    color: yellowgreen;
+} */
+
+/* Adjecent sibling selector */
+h3 + p {
+    font-family: Georgia;
+}
+
+/* General sibling selector */
+h3 ~ p {
+    color: blue;
+}
+
+
+/* Inheritance */
+
+p {
+    border: 1px solid black;
+}
+
+strong {
+    border: inherit;
+}
+
