@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;800&display=swap');
+
+* {
+    font-family: 'Sono', sans-serif;
+    text-align: justify;
+}
+
+html {
+    /* Default, for every browser 1rem = 16px */
+    /* 100% = 16px */
+    font-size: 62.5%;
+    /* After you change font-size to 62.5% */
+    /* Now 1rem = 10px */
+}
+
+h1 {
+    font-size: 5.6rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
