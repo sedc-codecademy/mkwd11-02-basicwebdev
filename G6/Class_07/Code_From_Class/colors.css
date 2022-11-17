@@ -1,0 +1,10 @@
+body {
+    background-color: red;
+
+}
+
+.color-text {
+    color: rgb(34, 44, 181);
+    /* background-color: rgba(54, 228, 106, 0.5); */
+    background-color: hsl(0, 100%, 100%);
+}
