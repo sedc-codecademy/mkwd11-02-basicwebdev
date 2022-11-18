@@ -1,0 +1,64 @@
+*,
+body {
+    padding: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+.box {
+    padding: 10px;
+    border: 2px solid #ccc;
+    margin: 10px;
+    width: 400px;
+}
+
+.privacy:link {
+    color: red;
+}
+
+.privacy:visited {
+    color: aqua;
+}
+
+p {
+    color: gray;
+}
+
+p:hover {
+    color: black;
+}
+
+a:focus {
+    color: green;
+}
+
+a:active {
+    color: chocolate;
+}
+
+.parent {
+    width: 500px;
+    box-sizing: content-box !important;
+    border: 1px hidden blue;
+    overflow: scroll;
+}
+
+.child {
+    width: 2000px;
+    border: 1px solid red;
+}

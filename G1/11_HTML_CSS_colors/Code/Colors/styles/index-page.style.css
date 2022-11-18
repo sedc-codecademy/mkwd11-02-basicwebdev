@@ -1,0 +1,35 @@
+header {
+    background-color: #2d3436;
+    color: whitesmoke;
+}
+
+header > .header-brand {
+    color: #fdcb6e;
+    font-size: 22px;
+}
+
+header .list-item-example {
+    background-color: #fdcb6e;
+}
+
+a {
+    color: #359ebb;
+}
+
+footer {
+    background-color: #2d3436;
+    color: whitesmoke;
+}
+
+footer span {
+    color: #fdcb6e;
+}
+
+.contact-card h3 {
+    background-color: rebeccapurple;
+    color: whitesmoke;
+}
+
+.styled-p {
+    color: chartreuse;
+}

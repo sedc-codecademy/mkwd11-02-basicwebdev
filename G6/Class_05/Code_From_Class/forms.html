@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+       <fieldset>
+            <legend>Personal info</legend>
+            <label for="username">Username: </label>
+            <input required type="text" name="username" id="username" placeholder="Insert your username..." />
+            <br>
+            <label for="pass">Password:</label>
+            <input type="password" name="password" id="pass" />
+       </fieldset>
+       <fieldset>
+            <legend>Comment and age</legend>
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" rows="5" cols="50" maxlength="250"></textarea>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" />
+       </fieldset>
+    
+       <fieldset>
+            <legend>Rest</legend>
+            <p>Please select your gender:</p>
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Female</label>
+            <p>Please select your favourite subject:</p>
+            <input type="checkbox"  value="HTML" id="html" name="subjects"/>
+            <label for="html">HTML</label>
+            <input type="checkbox"  value="JS" id="js" name="subjects"/>
+            <label for="js">JS</label>
+            <input type="checkbox"   value="C#" id="c#" name="subjects"/>
+            <label for="c#">C#</label>
+
+            <label for="lang">Please select one of more of your favourite programming languages:</label>
+            <select id="lang" name="lang" required>
+                <option value="html">Hyper Text Markup Language</option>
+                <option value="js" >Java Script</option>
+                <option value="c#" selected>C#</option>
+            </select>
+            <br>
+            <label for="langs">Please select one of more of your favourite programming languages:</label>
+            <select id="langs" name="langs" multiple size="3">
+                <option value="html">Hyper Text Markup Language</option>
+                <option value="js" >Java Script</option>
+                <option value="c#" selected>C#</option>
+            </select>
+       </fieldset>
+        <br/>
+        <label for="file">INSERT FILE</label>
+        <input type="file" name="file" id="file" accept=".pdf" />
+        <br>
+        <input type="hidden" name="id" value="askdasdasd-asfasfdasfasf-asfasfasfasfasf" />
+        <br>
+        <fieldset>
+            <legend>HTML5 inputs</legend>
+            <input type="date" />
+            <input type="email" />
+            <input type="url" />
+            <input type="search" />
+        </fieldset>
+        <input type="submit" value="SEND"/>
+        <input type="reset" value="RESET" />
+
+
+        <label for="cont">Continent</label>
+        <select id="cont" name="continent">
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="africa">Africa</option>
+        </select>
+    </form>
+
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat et libero veritatis nobis, minima fugiat laboriosam iure unde deserunt, provident delectus, consequuntur itaque! Id voluptates aliquam dolorem, ut laudantium veniam?
+    </p>
+    <button>Click me!</button>    
+
+
+    Price, Color, Model, serial number
+</body>
+</html>

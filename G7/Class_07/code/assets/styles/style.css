@@ -1,0 +1,78 @@
+/* **** COLORS **** */
+
+.colorWrapper {
+  background-color: grey;
+  opacity: 0.8;
+}
+
+.color-name {
+  color: rebeccapurple;
+}
+
+.hex-code {
+  color: #ff0000;
+}
+
+.rgb-color {
+  color: rgb(255, 106, 0);
+}
+
+.rgba-color {
+  color: rgba(0, 255, 110, 0.859);
+}
+
+/* tag selector */
+
+h1,
+h3 {
+  /* color: hsl(148, 65%, 45%); */
+  color: hsla(132, 100%, 50%, 0.774);
+}
+
+/* ****** FONTS ****** */
+
+/* Fonts available of the system */
+.movieTitle {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+}
+
+#harryPotter {
+  font-family: "Times New Roman", Times, serif;
+  color: blueviolet;
+}
+
+/* First google font downloaded */
+@font-face {
+  src: url("../fonts/Rubik_Distressed/RubikDistressed-Regular.ttf");
+  font-family: "Rubik_Distressed";
+}
+
+#googleFont {
+  font-family: "Rubik_Distressed";
+}
+
+@font-face {
+  src: url("../fonts/Roboto/Roboto-LightItalic.ttf");
+  font-family: "My Roboto Light Italic";
+}
+
+/* "Rubik_Distressed" is substitute font of  "My Roboto Light Italic" */
+
+.ourParagraph {
+  font-family: "My Roboto Light Italic", "Rubik_Distressed";
+}
+
+.operatingSystems li {
+  font-family: "Ubuntu", sans-serif;
+  font-style: oblique;
+  font-size: 30px;
+}
+
+/* WAY 3 Importing the google font =) */
+
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap");
+
+#asideContent {
+  font-family: "BhuTuka Expanded One", cursive;
+}

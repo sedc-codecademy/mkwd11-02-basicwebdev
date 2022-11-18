@@ -1,0 +1,26 @@
+/* ID SELECTOR */
+
+#welcomingMessage {
+  color: blue;
+}
+
+/* CLASS SELECTOR */
+.websiteDescription {
+  font-style: oblique;
+}
+
+/* SELECT BY TYPE (BY ELEMENT NAME) */
+p {
+  color: brown;
+  font-style: oblique;
+  font-size: 40px;
+}
+
+/* We will cover this type of selecting next class */
+.secondListItem li {
+  color: yellow;
+}
+
+article {
+  color: blue;
+}

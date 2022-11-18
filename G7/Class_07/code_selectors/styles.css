@@ -1,0 +1,57 @@
+/* this * selector means ALL / WILDCARD */
+* {
+  color: magenta;
+}
+/* class selector */
+.myWelcomeMsg {
+  color: red;
+}
+
+/* tag selector  */
+ol {
+  color: orangered;
+}
+
+/* styles all the li elements, and it has advantage over the * selector =) */
+li {
+  color: brown;
+}
+
+/* !important overwrites everything, it acts like the boss of the page =) but it is bad practice */
+/* li {
+  color: brown !important;
+} */
+
+/* the id is more specific selector then just li and will apply new color to the one li with id harryPotter */
+#harryPotter {
+  color: green;
+}
+
+/* ************* SELECTORS ************* */
+
+/* THIS SELECTOR WILL AFFECT ALL DIRECT H3 CHILDREN OF THE ELEMENT 
+WITH ID #ourArticle */
+#ourArticle > h3 {
+  color: red;
+}
+
+/* ALL DESCEDANTS */
+
+#secondArticle h3 {
+  color: yellowgreen;
+}
+
+#secondArticle .costumColor {
+  color: pink;
+}
+
+/* THE ~ means ALL SIBLINGS */
+.sportsArticle ~ p,
+h3 {
+  font-style: italic;
+}
+
+/* FIRST SIBLING  + */
+.newsArticle + p {
+  color: aqua;
+}

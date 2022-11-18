@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ccc;
+    height: 100vh;
+}
+.box{
+    border:1px solid black;
+    background: red;
+    padding: 20px;
+    color: white;
+}
+.parent{
+    width: 500px;
+}
+.units-px{
+    width: 100px;
+}
+.units-procent{
+    width: 80%;
+}
+.units-vw{
+    width: 100vw;
+}
+
+.one-em{
+    font-size: 2em;
+}
+
+.one-rem{
+    font-size: 1rem;;
+}
+
+.parent-em{
+    font-size: 30px;
+}
+
+.text-shadow{
+    text-shadow: 2px -2px 10px red;
+}
