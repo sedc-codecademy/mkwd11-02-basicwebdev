@@ -75,4 +75,50 @@ h3 {
 
 #asideContent {
   font-family: "BhuTuka Expanded One", cursive;
+
+  /* TEXT TRANSFORM PROPERTY */
+  /* ALL LETTER ARE UPPERCASED =) */
+  /* text-transform: uppercase; */
+
+  /* ALL LETTER ARE LOWERCASED =) */
+  /* text-transform: lowercase; */
+
+  /* EACH WORD FROM THE TEXT IN WITH UPPERCASED LETTER */
+  text-transform: capitalize;
+}
+
+.secondAsideText {
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  /* text-align: end; */
+  text-align: center;
+}
+
+.textDecorated {
+  /* text-decoration-style: dashed;
+  text-decoration-line: underline;
+  text-decoration-color: olivedrab;
+  text-decoration-thickness: 3px; */
+
+  /* same as above but it is a one liner */
+  text-decoration: dashed underline olivedrab 3px;
+}
+
+.lineHeightValue {
+  line-height: 30px;
+}
+.lineHeightValue::first-line {
+  color: aquamarine;
+}
+/* vertical aligns */
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+/* PSUEDO SELECTORS */
+#endingMessage::first-letter {
+  color: red;
+  font-style: oblique;
+  font-size: 25px;
 }
