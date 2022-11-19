@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+form {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+fieldset {
+    display: inline-block;
+    padding: 0;
+}
+
+.form-group {
+    padding: 0.5rem;
+}
+
+.btn-container {
+    text-align: end;
+    min-height: 40px;
+    border-top: 1px solid #999
+}
+
+.btn {
+    padding: 0.2rem 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.2rem;
+    text-transform: uppercase;
+    border: none;
+}
+
+.btn-primary {
+    background-color: coral;
+    color: #fff;
+}
+
+.btn[type="reset"] {
+    background-color: #999;
+    color: white;
+}
+
+.btn:hover {
+    padding: 0.3rem 0.6rem;
+}
+
+.btn-primary:hover {
+    background: rgb(155, 73, 43);
+}
+
+label,
+.label {
+    display: inline-block;
+    width: 10rem;
+    text-align: left;
+}
+
+.label {
+    margin-left: 1rem;
+    vertical-align: top;
+}
+
+select {
+    min-width: 170px;
+}
+
+.options-container {
+    display: inline-block;
+}
+
+.relative {
+    position: relative;
+    top: 100px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form method="POST">
+        <fieldset>
+            <legend>Testform</legend>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <span class="label">
+                    Gender
+                </span>
+                <span class="options-container">
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Male</label>
+                    <br />
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label>
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="continent">Continent</label>
+                <select name="continent" id="continent">
+                    <option value="Europe">Europe</option>
+                    <option value="Africa">Africa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <span class="label">
+                    Meals
+                </span>
+                <span class="options-container">
+                    <input type="checkbox" name="meals" id="breakfest" value="breakfest" />
+                    <label for="breakfest">Breakfest</label>
+                    <br />
+                    <input type="checkbox" name="meals" id="lunch" value="lunch" />
+                    <label for="lunch">Lunch</label>
+                    <br />
+                    <input type="checkbox" name="meals" id="dinner" value="dinner" />
+                    <label for="dinner">Dinner</label>
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="remark">Remark</label>
+                <textarea name="remark" id="remark" cols="20" rows="10"> </textarea>
+            </div>
+            <div class="btn-container">
+                <button class="btn" type="reset">Reset</button>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

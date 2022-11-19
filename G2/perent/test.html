@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *,
+    body,
+    html {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    form {
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .form-control {
+        margin: 20px 0;
+        padding: 0 20px;
+    }
+
+    .label {
+        width: 5rem;
+        display: inline-block;
+
+    }
+
+    .radio-group {
+        display: inline-block;
+    }
+
+    .buttons {
+        text-align: right;
+    }
+
+    .form-control {
+        width: 40vw;
+    }
+
+    .t {
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+
+    h3 {
+        padding: 1rem 0;
+        background-color: #ccc;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    input[type="text"] {
+        width: 5rem;
+    }
+</style>
+
+<body>
+    <form>
+        <div class="t">
+            <h3>My Form</h3>
+            <hr />
+            <div class="form-control">
+                <label class="label" for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-control">
+                <label class="label" for="password">Age</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-control">
+                <label class="label" for="age">Age</label>
+                <input type="number">
+            </div>
+            <div class="form-control">
+                <span class="label label-group">Gender</span>
+                <span class="radio-group">
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label class="label" for="male">Male</label>
+                    <br>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label class="label" for="female">Female</label>
+                    <br>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label class="label" for="female">Female</label>
+                </span>
+
+            </div>
+            <hr />
+            <div class="buttons">
+                <button class="reset" type="reset">Reset</button>
+                <button>Submit</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
