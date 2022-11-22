@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+
+#two {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: blue;
+    z-index: 2;
+}
+
+#four {
+    position: relative;
+    top: 50px;
+    left: -110px;
+    background: green;
+    z-index: 1;
+}
+
+body {
+    height: 200vh;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+}
+
+.perent-relative {
+    margin-top: 200px;
+    min-height: 40vh;
+    position: relative;
+    background-color: rgba(255, 0, 0, 0.38);
+}
+
+.child-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    display: block;
+    transform: translateX(-50%);
+    background-color: aqua;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+
+#one {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    background: blue;
+}
+
+.outer {
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+    padding-left: 150px;
+}

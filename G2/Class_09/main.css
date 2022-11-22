@@ -1,0 +1,55 @@
+body {
+    height: 300vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    position: relative;
+    margin-top: 10rem;
+    background: blue;
+    height: 20vh;
+}
+
+.child {
+    top: 10px;
+    right: 10px;
+    background-color: brown;
+    z-index: 1;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.items {
+    padding: 2rem;
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+.items:nth-child(1) {
+    background-color: blue;
+
+}
+
+.items:nth-child(2) {
+    background-color: green;
+}
+
+.items:nth-child(3) {
+    background-color: red;
+}

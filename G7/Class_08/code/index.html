@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <nav>
+        <ul class="myNav">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li id="aboutUs">
+            <a href="./pages/aboutus.html">About us</a>
+          </li>
+          <li>
+            <a href="">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- BOX MODEL -->
+    <main>
+      <section class="thinBorder">
+        <!-- the heading is a block element, it consumes the whole available space of the screen -->
+        <h3>Movies section</h3>
+        <!-- same for the h4 =) -->
+        <h4 class="favMovie">My favourite movie:</h4>
+        <img
+          src="https://i.ytimg.com/vi/oLG8dG-jVsU/movieposter_en.jpg"
+          alt="myMovie"
+          height="150px"
+        />
+        <p class="subtitle">
+          The Getleman by Guy Ritchie! This is a must my fellas =)
+        </p>
+      </section>
+      <!-- section is block element and will go below of the above section =) -->
+      <section class="thinBorder">
+        <h3>Songs Section</h3>
+      </section>
+
+      <br />
+      <hr />
+      <!-- HORIZONTAL  TRAFFIC LIGHT -->
+      <!-- INLINE-BLOCK -->
+      <div class="trafficLightsWrapper">
+        <!-- red -->
+        <div class="red"></div>
+        <!-- yellow -->
+        <div class="yellow"></div>
+        <!-- green -->
+        <div class="green"></div>
+      </div>
+      <h1 id="helloWorld">HELLO WORLD!</h1>
+      <h1 id="ourDummyText">Lorem ipsum dolor sit amet.</h1>
+      <br />
+      <hr />
+      <!-- CONTENT BOX VS BORDER BOX -->
+      <section>
+        <div id="contentBox">CONTENT BOX</div>
+        <div id="borderBox">BORDER BOX</div>
+      </section>
+      <!-- OVERFLOW -->
+
+      <div id="noOverflow">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim porro
+          deserunt illum provident facere earum aliquid nihil! Ullam officia
+          nisi optio aspernatur repellendus, inventore exercitationem sed
+          excepturi sunt, doloremque nostrum?
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div id="withOverflow">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim porro
+          deserunt illum provident facere earum aliquid nihil! Ullam officia
+          nisi optio aspernatur repellendus, inventore exercitationem sed
+          excepturi sunt, doloremque nostrum?
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Lorem ipsum dolor sit.</p>
+      <p id="secondParag">Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+    </footer>
+  </body>
+</html>

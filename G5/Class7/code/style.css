@@ -1,0 +1,157 @@
+/* **** COLORS **** */
+
+/* Tag selector =) */
+h1 {
+  color: red;
+}
+
+/* Tag selector */
+
+section {
+  background-color: beige;
+}
+
+/* id selector */
+#colorWrapper {
+  background-color: ghostwhite;
+}
+
+/* by class selectors */
+
+/* By Color Name */
+.color-name {
+  color: rebeccapurple;
+}
+/* By Hex Code */
+.hex-code {
+  color: #6495ed;
+}
+/* By RGB */
+.rgb-color {
+  /* color: rgb(0, 255, 255); */
+  /* RED GREEN BLUE =) */
+  color: rgb(14, 200, 123);
+}
+
+#square {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(13, 0, 255, 0.595);
+}
+
+/* HSL COLOR */
+#hsl-color {
+  width: 100px;
+  height: 50px;
+  /* background-color: hsl(150, 63%, 40%); */
+
+  /* hsla dodava opacity na samata boja =) */
+  background-color: hsla(95, 100%, 50%, 0.936);
+}
+
+.welcomingMsg {
+  color: hsl(303, 42%, 31%);
+}
+
+/* **** FONTS **** */
+
+/* posle sekoja zapirka, fontot koishto doagja e
+substitute font (rezerva font), i dokolku korisnikot go nema
+prvicniot font, ke proba se aplikuva rezervniot font */
+.movieTitle {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Google fonts downloaded WAY #1 */
+@font-face {
+  src: url("./fonts/Rubik_Microbe/RubikMicrobe-Regular.ttf");
+  font-family: "RubikMicrobe-Regular";
+}
+
+#googleFont {
+  font-family: "RubikMicrobe-Regular";
+}
+
+@font-face {
+  src: url("./fonts/Roboto/Roboto-Black.ttf");
+  font-family: "My Roboto Downloaded font";
+}
+
+.jokesWrapper {
+  font-family: "My Roboto Downloaded font", "RubikMicrobe-Regular";
+}
+
+/* WAY #2 */
+.operatingSystems {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#operatingSystemHeading {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* WAY #3 */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Oswald:wght@400;600;700&display=swap");
+
+#asideParag {
+  font-family: "Oswald";
+  font-weight: 700;
+
+  /* it will capitalize each word in the sentence =) */
+  /* text-transform: capitalize; */
+
+  /* it will put each latter in uppercase */
+  /* text-transform: uppercase; */
+
+  /* it will put each latter in lowercase */
+  text-transform: lowercase;
+}
+
+.aboutUs {
+  font-family: "Noto Sans JP", sans-serif;
+
+  /* LONG SYNTAX */
+
+  /* text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+  text-decoration-thickness: 1.5px; */
+
+  /* SHORTHAND / ONE-LINER */
+  /* same as above but one liner =) */
+  text-decoration: wavy underline red 1.5px;
+
+  line-height: 30px;
+
+  /* 1 rem = default font size */
+  /* 16px */
+  /* 2rem = 16x2 = 32px */
+  font-size: 2rem;
+}
+
+/* PSUEDO-SELECTORS #1 
+
+it will apply the following css to the first-line
+of the element with class .aboutUs =)
+*/
+.aboutUs::first-line {
+  text-transform: uppercase;
+}
+
+/* PSUEDO-SELECTORS #2
+
+/*  it will apply the following css to the first-letter
+of the element with class .aboutUs =)*/
+.aboutUs::first-letter {
+  color: red;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}

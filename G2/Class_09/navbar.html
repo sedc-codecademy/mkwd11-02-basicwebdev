@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    header {
+        background-color: beige;
+    }
+
+    .box {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-basis: 40vw;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+    }
+
+    li:hover {
+        background-color: rgb(187, 187, 149);
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 2rem;
+        display: block;
+    }
+
+    main {
+        display: flex;
+        height: 80vh;
+        align-items: center;
+        text-align: center;
+    }
+
+    aside {
+        flex-basis: 30%;
+    }
+
+    main>section {
+        flex-grow: 1;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="box">
+            <h1>Logo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="Contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            this is main
+        </section>
+        <aside>
+            this is aside
+        </aside>
+    </main>
+</body>
+
+</html>
