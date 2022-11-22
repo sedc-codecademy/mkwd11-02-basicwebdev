@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+.myNav {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* a:link will apply style to the links that are not visited yet */
+a:link {
+  color: deeppink;
+}
+
+/* visited applies style on hyperlinks that were visited */
+a:visited {
+  color: rgb(167, 67, 27);
+}
+/* hover will apply style when we are over the element with the pointer */
+a:hover {
+  color: rgb(166, 105, 81);
+}
+
+a:focus {
+  color: blue;
+  text-decoration-line: underline;
+}
+
+a:active {
+  color: rgb(0, 255, 106);
+}
+
+/* BOX MODEL */
+header {
+  border: 1px solid grey;
+  margin-bottom: 30px;
+}
+
+main {
+  border: 1px solid brown;
+}
+
+.thinBorder {
+  border: 1px solid salmon;
+}
+
+/* We can change the default display value of any element
+and for the img, instead of the default inline, we put block */
+
+/* img {
+  display: block;
+} */
+
+.favMovie {
+  border: 1px solid magenta;
+  /* we have changed the default display prop. of the heading
+  which is block to be inline =) */
+  display: inline;
+}
+
+.myNav li {
+  display: inline;
+}
+
+.subtitle {
+  display: inline;
+}
+
+/* Traffic light */
+
+.trafficLightsWrapper {
+  border: 1px solid black;
+  height: 200px;
+  width: 250px;
+}
+
+/* RED */
+.red {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: 1px solid black;
+  /* display: inline; */
+  display: inline-block;
+}
+/* YELLOW */
+.yellow {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border: 1px solid black;
+  /* display: inline; */
+  display: inline-block;
+}
+/* GREEN */
+.green {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border: 1px solid black;
+  /* display: inline; */
+  display: inline-block;
+}
+#helloWorld {
+  border: 1px solid red;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+}
+#ourDummyText {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+}
+
+/* CONTENT BOX VS BORDER BOX  */
+
+#contentBox {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  box-sizing: content-box;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#borderBox {
+  width: 300px;
+  height: 300px;
+  background-color: green;
+  box-sizing: border-box;
+  border: 1px solid black;
+
+  margin-top: 10px;
+  margin-left: 10px;
+
+  /* PADDING */
+
+  /* padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px; */
+
+  /* It will apply padding of 10px on each side */
+  /* padding: 10px; */
+
+  /* It will apply padding of 50px top & bottom and 10px left and right  */
+  /* padding: 50px 10px; */
+
+  /* It will apply padding of 50px top & bottom and 0 for left and right */
+  padding: 30px 0;
+
+  /* default font size is 16px
+    1 rem = 16px
+    2 rem = 16px * 2
+  */
+}
+
+#aboutUs {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+footer {
+  margin-top: 20px;
+  border: 1px solid gray;
+  background-color: beige;
+}
+
+#secondParag {
+  /* it applies 15px margin on all sites */
+  /* margin: 15px; */
+
+  /* it applies top & bottom 10px, left & right 5px */
+  /* margin: 10px 5px; */
+
+  /* it apply top & bottom 10px left and right 0 */
+  /* margin: 30px 0; */
+
+  /* it will apply margin of
+  30px => top
+  10px => right
+  20px => bottom
+  54px => left */
+  margin: 30px 10px 20px 54px;
+}
+
+/* OVERFLOW */
+
+#noOverflow {
+  width: 150px;
+  height: 80px;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+#withOverflow {
+  width: 150px;
+  height: 80px;
+  background-color: aqua;
+  /* overflow: scroll; */
+  overflow: auto;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>POSITIONING</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">Logo</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main container -->
+
+    <main class="container">
+      <section>
+        <h3>Hey, I am a heading, And I am not positioned relative =)</h3>
+        <h3 id="relativeHeading">
+          Hey fellas, I am heading too, and I am relative positioned =)
+        </h3>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+      </section>
+      <!-- Traffic Lights -->
+      <div>
+        <div class="box" id="one">Non Relative</div>
+        <div class="box" id="two">Relative</div>
+        <div class="box" id="three">Non Relative</div>
+      </div>
+
+      <!-- **** ABSOLUTE **** -->
+      <!-- WAY 1 => When the absolut element is not 
+      in parent element that is positioned relative -->
+      <div id="absoluteBox">ABSOLUTE BOX</div>
+      <!-- WAY 2 => WHen the absolute element is 
+      inside parent element of relative positioning -->
+      <section>
+        <h4>Movies to rent:</h4>
+        <!-- Movie cart element is positioned RELATIVE -->
+        <div class="movieCart">
+          <p>Lord of the rings</p>
+          <p>
+            Lord of the rings description Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Dignissimos, iure! Alias, hic. Eaque
+            nemo quidem repellat inventore deleniti in? Est numquam labore
+            aliquid possimus sequi fugiat incidunt reprehenderit? Amet,
+            necessitatibus.
+          </p>
+          <!-- the button is positioned absolute, and it's parent is relative
+          that why it goes on the right bottom corner -->
+          <button class="rentBtn">Rent</button>
+        </div>
+
+        <article>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+          corrupti consequatur nobis, velit voluptates veniam cupiditate
+          suscipit provident magnam dignissimos consectetur assumenda. Iure
+          magnam nam delectus! Rem molestiae perspiciatis fugit hic quam illo
+          tempore. Totam expedita atque recusandae vitae impedit, nobis,
+          reprehenderit voluptas libero aliquam delectus in! Nesciunt ad ipsam
+          praesentium maiores optio vitae fugit laudantium quaerat earum,
+          distinctio numquam hic obcaecati expedita est inventore officia
+          doloremque nam voluptas dolores rerum enim quisquam. Ducimus enim sunt
+          eligendi consequatur officiis, libero, consequuntur reprehenderit
+          culpa laudantium placeat quia saepe expedita distinctio nostrum, odio
+          velit qui quibusdam. Velit soluta, nam, maxime voluptatem laudantium
+          voluptates rem ratione, quas officiis praesentium deleniti assumenda.
+          Molestias, soluta harum aut maiores facere autem rerum repudiandae.
+          Nulla pariatur culpa nisi consequuntur, quos recusandae ullam
+          explicabo vel aut numquam reprehenderit aliquam aperiam, mollitia
+          deserunt repellendus, quia voluptate neque fuga. Hic perferendis
+          excepturi facilis saepe facere doloremque voluptatem cum consequuntur
+          nulla dolores. Exercitationem dicta possimus dolorum suscipit
+          reprehenderit eligendi odit sunt neque repudiandae ullam, cum
+          provident, hic quae libero, itaque fugit culpa! Nobis, quibusdam,
+          assumenda sed quos facere adipisci laborum velit repellendus
+          molestiae, totam delectus. At deserunt porro nemo quis unde id! Minus,
+          totam! Illo illum voluptates impedit a doloribus neque.
+        </article>
+        <article>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+          corrupti consequatur nobis, velit voluptates veniam cupiditate
+          suscipit provident magnam dignissimos consectetur assumenda. Iure
+          magnam nam delectus! Rem molestiae perspiciatis fugit hic quam illo
+          tempore. Totam expedita atque recusandae vitae impedit, nobis,
+          reprehenderit voluptas libero aliquam delectus in! Nesciunt ad ipsam
+          praesentium maiores optio vitae fugit laudantium quaerat earum,
+          distinctio numquam hic obcaecati expedita est inventore officia
+          doloremque nam voluptas dolores rerum enim quisquam. Ducimus enim sunt
+          eligendi consequatur officiis, libero, consequuntur reprehenderit
+          culpa laudantium placeat quia saepe expedita distinctio nostrum, odio
+          velit qui quibusdam. Velit soluta, nam, maxime voluptatem laudantium
+          voluptates rem ratione, quas officiis praesentium deleniti assumenda.
+          Molestias, soluta harum aut maiores facere autem rerum repudiandae.
+          Nulla pariatur culpa nisi consequuntur, quos recusandae ullam
+          explicabo vel aut numquam reprehenderit aliquam aperiam, mollitia
+          deserunt repellendus, quia voluptate neque fuga. Hic perferendis
+          excepturi facilis saepe facere doloremque voluptatem cum consequuntur
+          nulla dolores. Exercitationem dicta possimus dolorum suscipit
+          reprehenderit eligendi odit sunt neque repudiandae ullam, cum
+          provident, hic quae libero, itaque fugit culpa! Nobis, quibusdam,
+          assumenda sed quos facere adipisci laborum velit repellendus
+          molestiae, totam delectus. At deserunt porro nemo quis unde id! Minus,
+          totam! Illo illum voluptates impedit a doloribus neque.
+        </article>
+
+        <!-- FIXED -->
+        <div id="chatBot"></div>
+
+        <!-- FLOAT -->
+        <hr />
+        <br />
+        <h5>Float example</h5>
+        <section class="moviesContainer">
+          <div class="movieOne">
+            <h1>Harry Potter And the half blood Prince</h1>
+            <p>
+              <img
+                src="https://m.media-amazon.com/images/I/51uO1pQc5oL._AC_SY780_.jpg"
+                alt="hp"
+              />
+              Harry Potter Description Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Deserunt accusamus tempora explicabo, nobis, eos
+              voluptatem iure totam accusantium consectetur velit veritatis
+              voluptatibus ex molestias nesciunt? Adipisci inventore cupiditate
+              quasi consequuntur. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ex reprehenderit a ea explicabo repudiandae
+              omnis possimus impedit consequatur maxime cupiditate ad dolores,
+              illum ab vel. Nam dolore perspiciatis quas ullam? voluptatem iure
+              totam accusantium consectetur velit veritatis voluptatibus ex
+              molestias nesciunt? Adipisci inventore cupiditate quasi
+              consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ex reprehenderit a ea explicabo repudiandae omnis possimus
+              impedit consequatur maxime cupiditate ad dolores, illum ab vel.
+              Nam dolore perspiciatis quas ullam?
+            </p>
+          </div>
+          <div class="movieTwo">
+            <h1>Harry Potter And the half blood Prince</h1>
+            <p>
+              <img
+                src="https://m.media-amazon.com/images/I/51uO1pQc5oL._AC_SY780_.jpg"
+                alt="hp"
+              />
+              Harry Potter Description Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Deserunt accusamus tempora explicabo, nobis, eos
+              voluptatem iure totam accusantium consectetur velit veritatis
+              voluptatibus ex molestias nesciunt? Adipisci inventore cupiditate
+              quasi consequuntur. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ex reprehenderit a ea explicabo repudiandae
+              omnis possimus impedit consequatur maxime cupiditate ad dolores,
+              illum ab vel. Nam dolore perspiciatis quas ullam? voluptatem iure
+              totam accusantium consectetur velit veritatis voluptatibus ex
+              molestias nesciunt? Adipisci inventore cupiditate quasi
+              consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ex reprehenderit a ea explicabo repudiandae omnis possimus
+              impedit consequatur maxime cupiditate ad dolores, illum ab vel.
+              Nam dolore perspiciatis quas ullam?
+            </p>
+          </div>
+          <!-- float example 2 -->
+          <!-- WITHOUT CLEAR -->
+          <h2>Without clear</h2>
+          <div id="div1">Div number 1</div>
+          <div id="div2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+            ratione corporis facilis dolorem ab dolores incidunt vero.
+            Consequuntur, perspiciatis est!
+          </div>
+
+          <!-- WITH CLEAR -->
+          <h2>With clear</h2>
+          <div id="div3">Div number 2</div>
+          <div id="div4">
+            DIV4, GOES BELOW DIV NUMBER 2 BECAUSE IT CLEARES THE FLOAT WITH THE
+            PROPERTY CLEAR: LEFT Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Quam ratione corporis facilis dolorem ab dolores
+            incidunt vero. Consequuntur, perspiciatis est!
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

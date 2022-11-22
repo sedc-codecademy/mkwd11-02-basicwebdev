@@ -1,0 +1,154 @@
+header {
+  border-bottom: 1px solid salmon;
+  position: sticky;
+  top: 0;
+  background-color: white;
+
+  z-index: 2;
+}
+
+#logo {
+  display: inline;
+}
+
+nav {
+  display: inline;
+  position: relative;
+  /* left, top, right, bottom */
+  left: 80%;
+}
+
+.nav-list {
+  display: inline;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* CONTAINER */
+
+#relativeHeading {
+  position: relative;
+  left: 10px;
+  top: 30px;
+
+  /* Be careful, it might go away from the screen =) */
+  /* right: 250px; */
+}
+
+/* Traffic lights */
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#one {
+  background-color: red;
+  /* we cannot use the shifting props. on non-positioned elements */
+  /* left: 20px; */
+}
+
+#two {
+  background-color: yellow;
+  position: relative;
+  top: 24px;
+  right: 20px;
+
+  /* feel free to uncomment z-index 3 so it will have
+  higher value then the header and it will be on top of it  */
+  /* z-index: 3; */
+}
+
+#three {
+  background-color: green;
+}
+
+/* ABSOLUTE  */
+
+#absoluteBox {
+  position: absolute;
+  height: 50px;
+  background-color: blueviolet;
+  right: 100px;
+}
+
+.movieCart {
+  height: 300px;
+  width: 250px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.rentBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* FIXED */
+
+#chatBot {
+  background-image: url("./chatbot.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* FLOAT */
+
+.movieOne {
+  width: 49%;
+  display: inline-block;
+}
+
+img {
+  height: 150px;
+  float: left;
+}
+
+.movieTwo {
+  width: 49%;
+  display: inline-block;
+}
+
+.movieTwo img {
+  float: right;
+  height: 150px;
+}
+
+/* FLOAT EXAMPLE #2 */
+
+#div1 {
+  border: 3px solid green;
+  padding: 10px;
+  float: left;
+}
+
+#div2 {
+  padding: 10px;
+  border: 3px solid red;
+}
+
+#div3 {
+  border: 3px solid green;
+  padding: 10px;
+  float: left;
+}
+
+#div4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
