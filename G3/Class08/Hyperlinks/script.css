@@ -1,0 +1,65 @@
+html {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h1:hover {
+    color: green;
+    font-family: sans-serif;
+}
+
+h1:active {
+    background-color: pink;
+}
+
+p {
+    font-size: 3rem;
+}
+
+/* State order is very important */
+/*
+    :link
+    :visisted
+    :hover
+    :focus
+    :active
+*/
+
+/* Specific for anchor element */
+/* Unvisited */
+a:link {
+    color: brown;
+    background-color: bisque;
+    text-decoration: none;
+}
+
+/* Visited is very limited */
+/* 
+    You cannot add new properties,
+    you can only modify already existing that link ( unvisited ) has! 
+*/
+a:visited {
+    color: cornflowerblue;
+    background-color: aquamarine;
+}
+
+a:hover, a:focus {
+    font-weight: bold;
+}
+
+/* In theory you can use these pseudo classes on any element  */
+/* Activates when you are positioned on top of a element */
+a:hover {
+    color: black;
+}
+
+a:focus {
+    color: deeppink;
+}
+
+a:active {
+    background-color: darkred;
+}
