@@ -1,0 +1,65 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    /* display: inline; */
+    width: 500px;
+    height: auto;
+    background-color: orange;
+
+    /*Margin */
+    margin-top: 50px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+
+    margin: 50px 70px 30px 80px;
+    margin: 30px auto;
+
+    /* Padding */ 
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    /*Shorthnad properties */
+    padding: 20px 40px;
+    padding: 20px;
+
+    /*Border */
+    border-style: solid;
+    border-color:aqua;
+
+    border-top-width: 5px;
+    border-right-width: 2px;
+    border-bottom-width: 4px;
+    border-left-width: 10px;
+
+    border: 20px dashed green;
+    border-radius: 40px;
+}
+
+/* h2 { 
+    display: inline;
+} */
+
+
+span {
+    display: inline-block;
+    margin-top: 100px;
+}
+
+
+p { 
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid red;
+    padding: 10px;
+    margin: 20px auto;
+    /* overflow-y: scroll; */
+
+    overflow: auto;
+}
