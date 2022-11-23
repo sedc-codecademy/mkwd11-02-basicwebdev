@@ -1,0 +1,10 @@
+1. Use position relative and position 4 elements wherever you like
+2. Use position absolute and place 4 elements in the corner of the browser window
+3. Use position absolute in a relative container and position 4 elements in each corner
+4. Use position fixed to create a back to top button on the right side
+5. Use position sticky to create a navbar and place the nav items at the bottom of the container.
+
+NOTE: 
+-Group them in different color groups, put content inside of them and make them different height and width.
+-Use px,vh,rem,%.
+-Experiment with everything !!!

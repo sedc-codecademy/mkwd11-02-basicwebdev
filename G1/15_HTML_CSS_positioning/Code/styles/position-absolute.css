@@ -1,0 +1,24 @@
+/* Absolute positioning */
+
+.parent {
+    position: relative;
+    height: 20vh;
+}
+
+.child-one {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.child-two {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.child-three {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}

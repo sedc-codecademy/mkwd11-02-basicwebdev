@@ -1,0 +1,21 @@
+/* Sticky positioning */
+
+.parent {
+  position: relative;
+  height: 200vh;
+}
+
+.child-one {
+  position: sticky;
+  top: 0;
+}
+
+.child-two {
+  position: absolute;
+  top: 50vh;
+}
+
+.child-three {
+  position: absolute;
+  top: 100vh;
+}

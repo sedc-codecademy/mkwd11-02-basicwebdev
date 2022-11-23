@@ -1,0 +1,34 @@
+.parent {
+    position: relative;
+    height: 200vh;
+}
+
+.child-one {
+    /* Position relative on the parent container does not affect this container with position fixed */
+    position: fixed;
+    top: 100px;
+    left: 0;
+}
+
+.child-two {
+    position: absolute;
+    top: 50vh;
+}
+
+.child-three {
+    position: absolute;
+    top: 100vh;
+}
+
+/* Fixed button */
+/* .btn-top {
+    position: fixed;
+    right: 20px;
+    top: 400px;
+} */
+
+/* Sticky */
+.btn-top {
+    position: sticky;
+    top: 0;
+}
