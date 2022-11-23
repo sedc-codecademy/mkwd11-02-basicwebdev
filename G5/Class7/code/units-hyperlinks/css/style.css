@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("fonts/Roboto-Black.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+h1 {
+    color: rgb(63, 63, 222);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* APSOLUTE UNITS */
+
+.apsoluteUnit-heading {
+    font-size: 1cm;
+    font-family: "Roboto-Black";
+}
+
+.apsoluteUnit-heading+p {
+    border: 3px solid rgb(250, 67, 67);
+    font-family: 'Dancing Script', cursive;
+}
+
+/* RELATIVE UNITS
+1. rem (root em) => 1rem = 16px
+2. em => 1em = parent-element (wrapper) value
+3. % => often used to define a size as relative to an element's parent
+4. VW => Viewport (Screen) Width 
+5. VH => Viewport (Screen) Height
+*/
+
+.relativeUnit-heading {
+    font-size: 3rem;
+    /* 3rem = 3 x 16px (root element font-size)*/
+}
+
+.relativeUnit-heading+div {
+    font-size: 20px;
+}
+
+.relativeUnit-paragraph1 {
+    font-size: 2em;
+    font-family: 'Patrick Hand', cursive;
+    /* 2 x 20px (font-size of the parent element, in this case the div wrapper)*/
+}
+
+.relativeUnit-paragraph2 {
+    font-size: 0.5em;
+}
+
+.relativeUnit-artilce {
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* STYLING HYPERLINKS */
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+#styling-hyperlinks {
+    color: rgb(234, 72, 99);
+}
+
+#styling-hyperlinks:visited {
+    color: green;
+}
+
+#styling-hyperlinks:hover {
+    color: rgb(235, 148, 163);
+    cursor: pointer;
+}
+
+#styling-hyperlinks:focus {
+    background-color: rgb(123, 254, 254);
+}
+
+#styling-hyperlinks:active {
+    color: yellow;
+}
