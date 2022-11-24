@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+
+/* * {
+    font-family: 'BhuTuka Expanded One', cursive;
+} */
+p {
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+    text-decoration:  blink dotted green ;
+    text-align: center;
+    line-height: 28px;
+    /* ABSOLUTE SIZE */
+    /* font-size: xxx-large;  */
+    width: 50vw;
+}
+
+
+#box {
+    background-color: red;
+}
+
+#inside {
+    background-color: blue;
+}
+
+h1 {
+    text-shadow: 3px 5px 3px red;
+}
+
+/* h1::first-letter {
+    font-size: 48px;
+} */
+
+#pseudo::first-letter {
+    font-size: 56px;
+}
+
+#pseudo::first-line {
+    color: orangered;
+}

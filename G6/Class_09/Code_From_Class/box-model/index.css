@@ -1,0 +1,23 @@
+#box {
+    width: 300px;
+    height: 300px;
+    /* border: 2px double red; */
+    /* border-style: solid double dashed dotted;
+    border-color: red green yellow blue;
+    border-width: 5px 2px 10px 8px; */
+    border-style: double dashed;
+    border-color: blue red;
+    border-width: 10px 5px;
+}
+
+#inlineBlockinlineBlock {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+#scroll {
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+}
