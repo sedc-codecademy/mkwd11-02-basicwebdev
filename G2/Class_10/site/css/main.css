@@ -1,0 +1,65 @@
+:root {
+    --main-dark: #465362;
+    --white: #FEFCFB;
+    --primary: #F34213;
+    --grey: rgb(198, 193, 193);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Navbar */
+.nav-header {
+    background-color: var(--main-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-header nav {
+    width: 90vw;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+}
+
+.logo-box img:nth-child(2) {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.logo-img {
+    width: 6rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    transition: all ease-in 500ms;
+}
+
+.nav-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.show-links {
+    max-height: 15rem;
+}
+
+/* Navbar end */
