@@ -1,0 +1,109 @@
+.box {
+  height: 100px;
+  border: 1px solid blue;
+  width: 100px;
+}
+
+/* PROPERTIES FOR THE FLEX PARENT */
+.container {
+  border: 1px solid red;
+  background-color: bisque;
+
+  /* width: 300px; */
+
+  display: flex;
+
+  /* **** FLEX-DIRECTION *****/
+
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  /* **** FLEX-WRAP *****/
+
+  /* Whenever the flex items fill the flex parent/flex container
+  the element will go beneath */
+  /* By default, if we do not specify flow-wrap the 
+  value is nowrap*/
+
+  flex-wrap: nowrap;
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* **** FLEX-FLOW *****/
+
+  /* Shorthand for flex-direction and flex-wrap */
+  /* flex-flow: row wrap; */
+
+  /* JUSTIFY-CONTENT ----> GOINT TO POSITION/PLACE THE FLEX ITEMS ON THE MAIN AXIS / HORIZONTALLY*/
+
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+  justify-content: space-around;
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; */
+
+  /* ALIGN ITEMS ----> GOING TO POSITION/PLACE THE FLEX ITEMS ON THE CROSS AXIS/VERTYCALLY*/
+  /* IN ORDER TO POSITION THE ELEMENTS ON THE CROSS AXIS
+  WE SHOULD HAVE POSITIVE HEIGHT AVAILABLE */
+
+  height: 400px;
+
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+
+  /* When you use align-items-stretch 
+  make sure the flex-items do not have fixed height */
+  /* align-items: stretch; */
+}
+
+/* ***** PROPERTIES FOR THE FLEX-ITEMS (FLEX-CHILDREN) ***** */
+
+/* order ---> Will change the position of the element (flex-item) */
+.box-1 {
+  order: 2;
+  /* flex-grow: 2; */
+}
+.box-2 {
+  order: 1;
+  align-self: flex-end;
+}
+/* flex-grow ---> The flex item will expand by the value we set */
+.box-3 {
+  /* flex-grow: 3; */
+  order: 3;
+  align-self: center;
+}
+
+.mainColor {
+  width: 350px;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* flex-basis prop. sets width to the 
+flex items */
+.mainColor div {
+  flex-basis: 100px;
+}
+
+#redColor {
+  background-color: red;
+}
+#blueColor {
+  background-color: blue;
+  flex-shrink: 10;
+}
+#pinkColor {
+  background-color: pink;
+}
+#orangeColor {
+  background-color: orange;
+}
