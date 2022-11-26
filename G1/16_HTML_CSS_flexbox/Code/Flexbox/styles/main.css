@@ -1,0 +1,62 @@
+/* Flexbox code goes here */
+
+.flex-container {
+  /* To initiate flex box (to make a flexible container)*/
+  display: flex;
+
+  /* Place items inside of the container (horizontally)*/
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+
+  /* Space the items inside the container */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+  /* Place items inside container (vertically) */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+
+  /* Wrap the items */
+  /* flex-wrap: wrap; */
+
+  /* Change direction */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row-reverse; */
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+
+  /* Align content example */
+  /* height: 300px; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+}
+
+.flexbox-item-1 {
+  /* Prevents shrinking */
+  /* flex-shrink: 0; */
+
+  flex-shrink: 1;
+  order: 2;
+}
+
+.flexbox-item-2 {
+  flex-grow: 3;
+  order: 1;
+  /* Align a single item */
+  align-self: flex-end;
+}
+
+.flexbox-item-3 {
+  /* flex-grow: 2; */
+  order: 3;
+  /* All 3 in one */
+  /* Grow, shrink, basis */
+  flex: 1 0 0px;
+  /* Grow */
+  /* Just like flex-grow */
+  flex: 2;
+}

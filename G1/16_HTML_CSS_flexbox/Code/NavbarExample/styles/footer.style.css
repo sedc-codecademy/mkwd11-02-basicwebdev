@@ -1,0 +1,14 @@
+footer {
+    background-color: var(--color--header);
+    color: white;
+    font-size: 1.7rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.footer-div {
+    text-align: center;
+}
+
+.footer-div span {
+    color: black;
+}
