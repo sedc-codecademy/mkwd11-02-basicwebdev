@@ -1,0 +1,98 @@
+
+h1 {
+    background-color: red;
+    color: #fff;
+}
+
+
+/* Mobile firs apporoach */
+@media screen and (min-width: 600px) {
+    h1 {
+        background-color: rebeccapurple;
+        margin: 0 auto;
+    }
+}
+
+
+/* Desktop first approach */
+@media screen and (max-width: 450px) {
+    h1 {
+        background-color: lightblue;
+        color: black;
+    }
+}
+
+
+.layout-example {
+    height: 300px;
+    margin-top: 40px;
+    border: 1px solid black;
+}
+
+.layout-example > div:nth-child(1) {
+    width: 20%;
+    background-color: lime;
+    height: 100%;
+
+    float: left;
+}
+
+.layout-example > div:nth-child(2) {
+    width: 40%;
+    height: 100%;
+    background-color: orange;
+
+    float: left;
+}
+
+.layout-example > div:nth-child(3) {
+    width: 40%;
+    height: 100%;
+    background-color: purple;
+
+    float: left;
+}
+
+@media screen and (max-width: 780px) {
+    .layout-example {
+        height: 600px;
+    }
+
+    .layout-example > div:nth-child(1) {
+        width: 40%;
+        height: 50%;
+    }
+
+    .layout-example > div:nth-child(2) {
+        width: 60%;
+        height: 50%;
+    }
+
+    .layout-example > div:nth-child(3) {
+        width: 100%;
+        height: 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .layout-example {
+        height: 800px;
+    }
+
+    .layout-example > div:nth-child(1) {
+        width: 100%;
+        /* height: 50% */
+    }
+
+    .layout-example > div:nth-child(2) {
+        width: 100%;
+        /* height: 50%; */
+    }
+
+    .layout-example > div:nth-child(3) {
+        width: 100%;
+        /* height: 50%; */
+    }
+}
