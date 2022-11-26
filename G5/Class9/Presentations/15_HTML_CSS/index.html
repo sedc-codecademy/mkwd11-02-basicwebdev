@@ -1,45 +1,46 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<title>HTML and CSS</title>
+	<title>HTML and CSS</title>
 
-		<meta name="description" content="HTML and CSS Presentation">
-		<meta name="author" content="SEDC">
+	<meta name="description" content="HTML and CSS Presentation">
+	<meta name="author" content="SEDC">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="assets/css/reveal.css">
-		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+	<link rel="stylesheet" href="assets/css/reveal.css">
+	<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="assets/lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'assets/text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'assets/text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 
-		<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+	<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
 
 			<section>
 
@@ -51,7 +52,7 @@
 						<small>Trainer: <a href="#">Trainer Name</a> - trainer@mail.com</small></br>
 						<small>Assistant: <a href="#">Assistant Name</a> - assistant@mail.com</small></br>
 						<img src="assets/img/lg.png" alt="logo" style="border:none; box-shadow:none;" />
-						
+
 					</p>
 					<small style="font-size: 15px;">© 2022/2023 Seavus Education &amp; Development Center</small>
 				</section>
@@ -70,8 +71,11 @@
 				<section class="font90" style="text-align: left;">
 					<h2>Positioning elements (1)</h2>
 					<ul>
-						<li>CSS has the following <strong style="color:#007ac9;">positioning schemes</strong> that allow you to control the layout of a page: <em>normal flow</em>, <em>relative positioning</em>, <em>absolute positioning</em> and <em>fixed positioning</em></li>
-						<li>You specify the positioning scheme using the <b>position</b> property in CSS. 
+						<li>CSS has the following <strong style="color:#007ac9;">positioning schemes</strong> that allow
+							you to control the layout of a page: <em>normal flow</em>, <em>relative positioning</em>,
+							<em>absolute positioning</em> and <em>fixed positioning</em>
+						</li>
+						<li>You specify the positioning scheme using the <b>position</b> property in CSS.
 							<br /><small>*You can also float elements using the <b>float</b> property.</small>
 						</li>
 					</ul>
@@ -84,8 +88,14 @@
 				<section class="font90" style="text-align: left;">
 					<h2>Positioning elements (2)</h2>
 					<ul>
-						<li><strong style="color:#007ac9;">Normal flow</strong> - Every block box element appears on a new line, causing each item to appear lower down the page than the previous one. Every inline box element appears in line with the other elements.</li>
-						<li><strong style="color:#007ac9;">Relative positioning</strong> - This moves an element from the position it would be in normal flow, shifting it to the <b>top</b>, <b>right</b>, <b>bottom</b>, or <b>left</b> of where it would have been placed and this does not affect the position of surrounding elements</li>
+						<li><strong style="color:#007ac9;">Normal flow</strong> - Every block box element appears on a
+							new line, causing each item to appear lower down the page than the previous one. Every
+							inline box element appears in line with the other elements.</li>
+						<li><strong style="color:#007ac9;">Relative positioning</strong> - This moves an element from
+							the position it would be in normal flow, shifting it to the <b>top</b>, <b>right</b>,
+							<b>bottom</b>, or <b>left</b> of where it would have been placed and this does not affect
+							the position of surrounding elements
+						</li>
 					</ul>
 				</section>
 
@@ -95,9 +105,16 @@
 				<section class="font90" style="text-align: left;">
 					<h2>Positioning elements (3)</h2>
 					<ul>
-						<li><strong style="color:#007ac9;">Absolute positioning</strong> - This positions the element <b>in relation to its containing element</b>. It is taken out of normal flow and does not affect the position of any surrounding elements </li>
-						<li><strong style="color:#007ac9;">Fixed positioning</strong> - This is a form of absolute positioning that positions the element <b>in relation to the browser window</b></li>
-						<li><strong style="color:#007ac9;">Floating elements</strong> - Floating an element allows you to take that element out of normal flow and position it to the <b>far left or right of a containing box</b>. The floated element becomes a block-level element around which other content can flow </li>
+						<li><strong style="color:#007ac9;">Absolute positioning</strong> - This positions the element
+							<b>in relation to its containing element</b>. It is taken out of normal flow and does not
+							affect the position of any surrounding elements
+						</li>
+						<li><strong style="color:#007ac9;">Fixed positioning</strong> - This is a form of absolute
+							positioning that positions the element <b>in relation to the browser window</b></li>
+						<li><strong style="color:#007ac9;">Floating elements</strong> - Floating an element allows you
+							to take that element out of normal flow and position it to the <b>far left or right of a
+								containing box</b>. The floated element becomes a block-level element around which other
+							content can flow </li>
 					</ul>
 				</section>
 
@@ -106,9 +123,10 @@
 
 				<!-- Slide 6 -->
 				<section>
-						<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
-						    <div class="sl-block-content"><img src="assets/img/pos_hed.png"><img src="assets/img/positioning_explained.png"></div>
-						</div>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+						<div class="sl-block-content"><img src="assets/img/pos_hed.png"><img
+								src="assets/img/positioning_explained.png"></div>
+					</div>
 				</section>
 
 
@@ -118,7 +136,8 @@
 					<ul>
 						<li>The element is positioned according to the normal flow of the document.</li>
 						<li>The top, right, bottom, left, and z-index properties have no effect.</li>
-						<li>This is the default value, so no CSS needed, but the syntax would be: <strong style="color:#007ac9;">position: static;</strong></li>
+						<li>This is the default value, so no CSS needed, but the syntax would be: <strong
+								style="color:#007ac9;">position: static;</strong></li>
 					</ul>
 				</section>
 
@@ -128,23 +147,29 @@
 					<h2>Relative positioning</h2>
 					<ul>
 						<li><strong style="color:#007ac9;">position: relative;</strong></li>
-						<li>The element is positioned according to the normal flow of the document, 
-							and then <b><i>offset relative to itself</i></b> based on the values of <b>top</b>, <b>right</b>, <b>bottom</b>, and <b>left</b>.</li>
+						<li>The element is positioned according to the normal flow of the document,
+							and then <b><i>offset relative to itself</i></b> based on the values of <b>top</b>,
+							<b>right</b>, <b>bottom</b>, and <b>left</b>.
+						</li>
 					</ul>
-					<p><small>The offset does not affect the position of any other elements; thus, the space given for the element in the 
-						page layout is the same as if position were static.</small></p>
+					<p><small>The offset does not affect the position of any other elements; thus, the space given for
+							the element in the
+							page layout is the same as if position were static.</small></p>
 				</section>
 
 
 				<!-- Slide 9 -->
 				<section style="text-align: left;">
-					<p><pre><code class="hljs" data-trim contenteditable>
+					<p>
+					<pre><code class="hljs" data-trim contenteditable>
 &lt;div class="box" id="one">One&lt;/div&gt;
 &lt;div class="box" id="two"&gt;Two&lt;/div&gt;
 &lt;div class="box" id="three"&gt;Three&lt;/div&gt;
 &lt;div class="box" id="four"&gt;Four&lt;/div&gt;
-					</code></pre></p>
-					<p><pre><code class="hljs" data-trim contenteditable>
+					</code></pre>
+					</p>
+					<p>
+					<pre><code class="hljs" data-trim contenteditable>
 * {
 	box-sizing: border-box;
 }
@@ -163,7 +188,8 @@
 	left: 20px;
 	background: blue;
 }
-					</code></pre></p>
+					</code></pre>
+					</p>
 				</section>
 
 
@@ -172,9 +198,13 @@
 					<h2>Absolute positioning</h2>
 					<ul>
 						<li><strong style="color:#007ac9;">position: absolute;</strong></li>
-						<li>The element is removed from the normal document flow, and no space is created for the element in the page layout.</li>
-						<li>It is positioned relative to its closest positioned ancestor <i>(i.e., the nearest ancestor that is not static)</i>, if any; otherwise, it is placed relative to the initial containing block.</li>
-						<li>Its final position is determined by the values of <b>top</b>, <b>right</b>, <b>bottom</b>, and <b>left</b>.</li>
+						<li>The element is removed from the normal document flow, and no space is created for the
+							element in the page layout.</li>
+						<li>It is positioned relative to its closest positioned ancestor <i>(i.e., the nearest ancestor
+								that is not static)</i>, if any; otherwise, it is placed relative to the initial
+							containing block.</li>
+						<li>Its final position is determined by the values of <b>top</b>, <b>right</b>, <b>bottom</b>,
+							and <b>left</b>.</li>
 					</ul>
 				</section>
 
@@ -183,12 +213,15 @@
 
 				<!-- Slide 11 -->
 				<section style="text-align: left;">
-					<p><pre><code class="hljs" data-trim contenteditable>
+					<p>
+					<pre><code class="hljs" data-trim contenteditable>
 &lt;div class="relative"&gt;This div element has position: relative;
 	&lt;div class="absolute"&gt;This div element has position: absolute;&lt;/div&gt;
 &lt;/div&gt;
-					</code></pre></p>
-					<p><pre><code class="hljs" data-trim contenteditable>
+					</code></pre>
+					</p>
+					<p>
+					<pre><code class="hljs" data-trim contenteditable>
 div.relative {
 	position: relative;
 	width: 400px;
@@ -204,7 +237,8 @@ div.absolute {
 	height: 100px;
 	border: 3px solid #73AD21;
 }
-					</code></pre></p>
+					</code></pre>
+					</p>
 				</section>
 
 
@@ -214,8 +248,10 @@ div.absolute {
 					<h2>Fixed positioning</h2>
 					<ul>
 						<li><strong style="color:#007ac9;">position: fixed;</strong></li>
-						<li>Fixed positioning is similar to absolute positioning, with the exception that the element's containing block is the <b>initial containing block established by the viewport</b></li>
-						<li>The element is removed from the normal document flow, and no space is created for the element in the page layout.</li>
+						<li>Fixed positioning is similar to absolute positioning, with the exception that the element's
+							containing block is the <b>initial containing block established by the viewport</b></li>
+						<li>The element is removed from the normal document flow, and no space is created for the
+							element in the page layout.</li>
 					</ul>
 				</section>
 
@@ -223,7 +259,8 @@ div.absolute {
 
 				<!-- Slide 13 -->
 				<section style="text-align: left;">
-					<p><pre><code class="hljs" data-trim contenteditable style="height: 200px;">
+					<p>
+					<pre><code class="hljs" data-trim contenteditable style="height: 200px;">
 &ltdiv class="outer"&gt;
 	&ltp&gt;
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis.
@@ -245,8 +282,10 @@ div.absolute {
 	&lt/p&gt;
 	&ltdiv class="box" id="one"&gt;One&lt/div&gt;
 &lt/div&gt;
-					</code></pre></p>
-					<p><pre><code class="hljs" data-trim contenteditable>
+					</code></pre>
+					</p>
+					<p>
+					<pre><code class="hljs" data-trim contenteditable>
 * {
 	box-sizing: border-box;
 }
@@ -271,7 +310,8 @@ div.absolute {
 	overflow: scroll;
 	padding-left: 150px;
 }
-					</code></pre></p>
+					</code></pre>
+					</p>
 				</section>
 
 
@@ -281,8 +321,9 @@ div.absolute {
 					<h2>Sticky positioning</h2>
 					<ul>
 						<li><strong style="color:#007ac9;">position: sticky;</strong></li>
-						<li>The element is positioned according to the normal flow of the document, 
-							and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor) 
+						<li>The element is positioned according to the normal flow of the document,
+							and then offset relative to its nearest scrolling ancestor and containing block (nearest
+							block-level ancestor)
 							based on the values of <b>top</b>, <b>right</b>, <b>bottom</b>, and <b>left</b>.</li>
 						<li>The offset does not affect the position of any other elements.</li>
 					</ul>
@@ -292,12 +333,14 @@ div.absolute {
 
 				<!-- Slide 15 -->
 				<section style="text-align: left;">
-					<p><pre><code class="hljs" data-trim contenteditable>
+					<p>
+					<pre><code class="hljs" data-trim contenteditable>
 #one { 
 	position: sticky; 
 	top: 10px; 
 }
-					</code></pre></p>
+					</code></pre>
+					</p>
 				</section>
 
 
@@ -307,9 +350,11 @@ div.absolute {
 					<h2>Overlapping elements</h2>
 					<ul>
 						<li><strong style="color:#007ac9;">z-index: number;</strong></li>
-						<li>When using positioning, boxes can overlap. If boxes do overlap, the elements that appear later in the HTML code sit on top of those that are earlier in the page</li>
+						<li>When using positioning, boxes can overlap. If boxes do overlap, the elements that appear
+							later in the HTML code sit on top of those that are earlier in the page</li>
 						<li>Control which element sits on top</li>
-						<li> Its value is a number, and the higher the number the closer that element is to the front</li>
+						<li> Its value is a number, and the higher the number the closer that element is to the front
+						</li>
 						<li>E.g. element with a z-index = 10 will appear over the top of element with z-index = 5</li>
 					</ul>
 				</section>
@@ -317,9 +362,9 @@ div.absolute {
 
 
 				<!-- Slide 17 -->
-				<section>		
+				<section>
 					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
-					    <div class="sl-block-content"><img src="assets/img/z_index.png"></div>
+						<div class="sl-block-content"><img src="assets/img/z_index.png"></div>
 					</div>
 				</section>
 
@@ -330,17 +375,21 @@ div.absolute {
 					<h2>Floating elements</h2>
 					<ul>
 						<li><strong style="color:#007ac9;">float: none|left|right|initial|inherit;</strong></li>
-						<li>The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.</li>
-						<li>The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).</li>
-						<li>You should always use the <strong>width</strong> property to indicate how wide the floating element should be</li>
+						<li>The float CSS property places an element on the left or right side of its container,
+							allowing text and inline elements to wrap around it.</li>
+						<li>The element is removed from the normal flow of the page, though still remaining a part of
+							the flow (in contrast to absolute positioning).</li>
+						<li>You should always use the <strong>width</strong> property to indicate how wide the floating
+							element should be</li>
 					</ul>
 				</section>
 
 
 
 				<!-- Slide 19 -->
-				<section  style="text-align: left;">
-					<p><pre><code class="hljs" data-trim contenteditable style="height: 200px;">
+				<section style="text-align: left;">
+					<p>
+					<pre><code class="hljs" data-trim contenteditable style="height: 200px;">
 &lt;section&gt;
 	&lt;div class="left"&gt;1&lt;/div&gt;
 	&lt;div class="left"&gt;2&lt;/div&gt;
@@ -352,8 +401,10 @@ div.absolute {
 		vel in massa. Phasellus feugiat est vel leo finibus congue.
 	&lt;/p&gt;
 &lt;/section&gt;
-					</code></pre></p>
-					<p><pre><code class="hljs" data-trim contenteditable>
+					</code></pre>
+					</p>
+					<p>
+					<pre><code class="hljs" data-trim contenteditable>
 section {
 	border: 1px solid blue;
 	width: 100%;
@@ -375,16 +426,17 @@ div {
 	float: right;
 	background: cyan;
 }
-					</code></pre></p>
+					</code></pre>
+					</p>
 				</section>
 
 
 
 
 				<!-- Slide 20 -->
-				<section>		
+				<section>
 					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
-					    <div class="sl-block-content"><img src="assets/img/markup.jpg"></div>
+						<div class="sl-block-content"><img src="assets/img/markup.jpg"></div>
 					</div>
 				</section>
 
@@ -392,26 +444,28 @@ div {
 
 
 				<!-- Slide 21 -->
-				<section style="text-align: left;" data-transition="slide" data-background="#222222" data-background-transition="slide">
+				<section style="text-align: left;" data-transition="slide" data-background="#222222"
+					data-background-transition="slide">
 					<h3>Homework #6</h3>
 					<p><strong>Title:</strong> Working with CSS positioning</p>
 					<p><strong>Description:</strong> Recreate the image on the next slide using HTML and CSS</p>
-					<p><small><strong>BONUS:</strong> Recreate the second image after the first one. This one is not required for your grade.</small></p>
+					<p><small><strong>BONUS:</strong> Recreate the second image after the first one. This one is not
+							required for your grade.</small></p>
 				</section>
 
 
 				<!-- Slide 22 -->
-				<section>		
+				<section>
 					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
-					    <div class="sl-block-content"><img src="assets/img/divcolor.png" style="border: none;"></div>
+						<div class="sl-block-content"><img src="assets/img/divcolor.png" style="border: none;"></div>
 					</div>
 				</section>
 
 
 				<!-- Slide 23 -->
-				<section>		
+				<section>
 					<div class="sl-block" data-block-type="image" style="width: 70%;" data-block-id="">
-					    <div class="sl-block-content"><img src="assets/img/mondrain.PNG" style="border: none;"></div>
+						<div class="sl-block-content"><img src="assets/img/mondrain.png" style="border: none;"></div>
 					</div>
 				</section>
 
@@ -429,43 +483,44 @@ div {
 
 			</section>
 
-			</div>
-
 		</div>
 
-		<script src="assets/lib/js/head.min.js"></script>
-		<script src="assets/js/reveal.js"></script>
+	</div>
 
-		<script>
+	<script src="assets/lib/js/head.min.js"></script>
+	<script src="assets/js/reveal.js"></script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+	<script>
 
-				transition: 'convex', // none/fade/slide/convex/concave/zoom
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
 
-				 // Transition speed
-    			transitionSpeed: 'default', // default/fast/slow
+			transition: 'convex', // none/fade/slide/convex/concave/zoom
 
-				 // Enable slide navigation via mouse wheel
-    			mouseWheel: true,
+			// Transition speed
+			transitionSpeed: 'default', // default/fast/slow
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
-					{ src: 'assets/plugin/notes/notes.js', async: true }
-				]
-			});
+			// Enable slide navigation via mouse wheel
+			mouseWheel: true,
 
-		</script>
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: 'assets/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'assets/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'assets/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+				{ src: 'assets/plugin/notes/notes.js', async: true }
+			]
+		});
 
-	</body>
+	</script>
+
+</body>
+
 </html>
