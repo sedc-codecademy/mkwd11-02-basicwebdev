@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <h2>Normal Element Flow (Static)</h2>
+    <div class="parent">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+
+    <br>
+
+    <h2>Inline Element Flow</h2>
+    <div class="parent" id="inlineParent">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+
+    <hr>
+
+    <h2>Relative Positioning</h2>
+    <div class="parent">
+        <div class="box">1</div>
+        <div class="box" id="firstRelativeChild">2</div>
+        <div class="box" id="secondRelativeChild">3</div>
+        <div class="box" id="thirdRelativeChild">4</div>
+        <div class="box" id="fourthRelativeChild">5</div>
+    </div>
+
+    <hr>
+
+    <div class="parent" id="absoluteParentWrapper">
+
+        <h2>Absolute Positioning</h2>
+        <div class="parent" id="absoluteParent">
+
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box" id="absoluteChild">3
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2>Fixed Positioning</h2>
+
+    <div class="parent">
+        <div class="box">1</div>
+        <div class="box" id="fixedChild">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About Us</li>
+                <li>Career</li>
+            </ul>
+        </div>
+        <div class="box">3</div>
+    </div>
+
+    <hr>
+
+    <h2>Sticky Positioning</h2>
+    <div class="card">
+        <h2 class="cardHeader">Heading 1</h2>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+    </div>
+    <div class="card">
+        <h2 class="cardHeader">Heading 2</h2>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+    </div>
+    <div class="card">
+        <h2 class="cardHeader">Heading 3</h2>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+    </div>
+    <div class="card">
+        <h2 class="cardHeader">Heading 4</h2>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+    </div>
+
+    <!-- If not nested in a parent, stays fixed to body / viewport -->
+    <!-- <div id="stickyHeader">Sticky Header</div> -->
+    <hr>
+
+    <h2>Float</h2>
+
+    <div class="parent">
+        <!-- <div class="box" id="floatingBox"></div> -->
+        <img src="//unsplash.it/25" alt="randomImage" id="floatingImg" />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi iusto ipsam voluptate provident aliquid
+        quos, repellat laborum. Odit maiores maxime explicabo, quas tempore officiis ducimus, laudantium possimus
+        aperiam nemo deserunt nisi incidunt consectetur illum dolorum eius quis eaque eligendi numquam? Impedit
+        quibusdam porro et esse. Iusto vero voluptate pariatur eos totam nemo cumque molestiae inventore! Labore eum
+        neque animi nihil facere possimus voluptates alias sunt at culpa iure, temporibus, quasi mollitia officia
+        minima est porro voluptas harum quas veritatis cumque praesentium molestias autem. Porro perspiciatis nulla
+        ipsam id alias reprehenderit facere quo iure neque hic, maiores cupiditate itaque. Qui odit nostrum, rerum
+        sapiente quas ipsam perspiciatis repellendus iste voluptate vitae officia ducimus nemo quam accusantium
+        <img src="//unsplash.it/15" alt="randomImage" id="floatingSecondImg" />
+        inventore, corrupti libero tenetur error. Expedita sapiente dolor, facilis consequatur illo ducimus
+        reiciendis laboriosam explicabo, atque culpa suscipit! Dolores, aperiam! Distinctio velit qui saepe possimus
+        corrupti atque id dolor reiciendis, est fugit veritatis asperiores aperiam accusamus et enim sequi quas
+        voluptatibus eligendi eos non laudantium animi? Obcaecati libero porro vel non molestiae eum quae maiores
+        saepe asperiores neque assumenda soluta, in, dignissimos tempora incidunt officiis cupiditate? Architecto
+        officiis magni perferendis consectetur nam a rem aut, sapiente voluptas dolore nisi, maiores mollitia
+        dolorum fugit debitis iste.
+    </div>
+
+</body>
+
+</html>
