@@ -1,0 +1,45 @@
+#animationWrapper {
+    background-color: darkred;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+}
+
+#loader {
+    margin: 150px auto;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+.loadingBar {
+    border: 3px solid white;
+
+    /* Animation */
+    animation-name: loader;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+
+    /* Transition */
+    transition-property: border-color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.loadingBar:hover{
+    border-color: darkcyan;
+}
+
+@keyframes loader {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

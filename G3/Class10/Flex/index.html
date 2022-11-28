@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style type="text/css">
+    .box{
+        font-size: 50px;
+        color: white;
+        padding: 10px;
+        text-align:center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 300;
+        box-sizing: border-box;
+        width: 300px;
+        /*flex-basis - sets the ideal size of the flex item before the empty space is distributed,
+          along the main axes.
+          1.Flex-basis uses units
+          2.Flex-basis has priority over width
+        */
+        flex-basis: 50%;
+        /*Flex-grow- how the flex items take the empty space
+          Flex-grow doesn't use units, this is ratio and it is unitless propery
+        */  
+        flex-grow:1;
+        /*Flex-shirink - remove the space from one flex item and add it to the rest
+          Flex-shrink doesn't user units, this is radio and it is unitless property
+        */
+        /*flex : grow shrink basis - III option
+          flex : unitless ( first is always grow), unit (basis)
+          flex : unitless (grow shrink)
+        */
+		}
+		
+	    .box-1 {background: #e51400; 
+        /*font-size: 1.5em;*/ 
+        order:3;
+        flex-shrink: 10;
+        }
+	    .box-2 {background: #fa6800;
+        /*font-size: 2em;*/
+        order:2;
+        flex-grow:2;
+        }
+		.box-3 {background: #f0a30a;
+        /*font-size: 2.5em;*/
+        /*Align-self - changes individual flex item in the container, across the cross axes*/
+        /*option: flex-end; flex-start, center*/
+        /*align-self: flex-start;*/
+        /*Order - sets the order of the individual flex items. Do not change the order of the elements
+          in HTML, change the order of the elements in the individual flex item
+        */
+        /*If you set order -1 it will set the flex item first in the line*/
+        order:1;
+        }
+        .box-4 {background: #e3c800;
+        /*font-size:1.7em;*/
+        order:4;
+        flex-grow:2;
+        }
+		.box-5 {background: #a4c400;}
+		.box-6 {background: #60a917;}
+		.box-7 {background: #00aba9;}
+		.box-8 {background: #1ba1e2;} 
+		.box-9 {background: #aa00ff;}
+
+        .container{
+            display: flex;
+            border: 2px solid black;
+            height:80vh;
+            /*Flex-Direction:Changes the direction of the main axis*/
+            /*options: row; row-reverse; column; column-reverse*/
+            flex-direction: row;
+            /*Flex-wrap:Sets the content in two rows*/
+            /*flex-wrap:wrap;*/
+            /*Justify-content -  how the space is distirbuted on the main axes*/
+            /*Options: flex-start; flex-end; space-between; space-around;*/
+            justify-content: space-between;
+            /*Align-items - how the space is distibuted along the cross axes*/
+            /*Options: stretch; flex-start, flex-end, center*/
+            align-items: center;
+            /*Align-content - how the space is distributed between rows across cross axes*/
+            /*Important!- Use with wrap and content with rows*/
+            /*Options: space-between, flex-start, flex-end, center*/
+            /*align-content: space-between;*/   
+
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <!--<div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>-->
+   </section>
+</body>
+</html>
