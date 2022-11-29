@@ -1,0 +1,57 @@
+:root {
+  --color--header: #0097d5;
+  --color--main: #a6a8aa;
+}
+
+body {
+  background-color: var(--color--main);
+}
+
+.logo-container img {
+  width: 130px;
+}
+
+.logo-container h1 {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+nav {
+  width: 100%;
+  flex: 2;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  font-size: 2.2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--color--header);
+  flex-wrap: wrap;
+}
+
+.nav-item a {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-item a:hover {
+  color: var(--color--header);
+  background-color: white;
+  font-weight: 400;
+}

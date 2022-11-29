@@ -22,3 +22,21 @@
 #name{
     background-color: dodgerblue;
 }
+
+#hsl {
+    background-color: hsl(60, 100%, 50%);
+}
+
+#hslLighter {
+    background-color: hsl(60, 100%, 80%);
+}
+
+#hslDarker{
+    background-color: hsl(60, 100%, 25%);
+}
+
+#hsla{
+    /* position: relative;
+    bottom: 50px; */
+    background-color: hsla(120, 60%, 50%, 0.8);
+}

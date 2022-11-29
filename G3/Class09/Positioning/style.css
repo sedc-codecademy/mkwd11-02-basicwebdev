@@ -1,0 +1,167 @@
+html,
+body {
+    height: 300%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.parent {
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: darkcyan;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#inlineParent > div {
+    display: inline-block;
+}
+
+#inlineParent > :nth-child(5) {
+    background-color: chartreuse;
+}
+
+#inlineParent > :first-child {
+    background-color: blueviolet;
+}
+
+#inlineParent > :last-child {
+    background-color: aqua;
+}
+
+
+/* Relative Positioning & z-index */
+/* top / bottom / right / left / z-index*/ 
+/* 
+    You cant use z-index on static positioned element
+    If you can avoid z-index, do it. If you have it on alot of elements it can very easily become very confusing.
+*/
+#firstRelativeChild {
+    position: relative;
+    left: 100px;
+}
+
+#secondRelativeChild {
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+    z-index: 2;
+}
+
+#thirdRelativeChild {
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+    z-index: 1;
+}
+
+#fourthRelativeChild {
+    position: relative;
+    left: 100px;
+    bottom: 80px;
+}
+
+/* Absolute Positioning */
+/* top / bottom / right / left / z-index*/ 
+/*
+    Removes the element from the normal flow and other elements completely ignore it.
+    Everything will go underneath the absolute element by default. (can be manipulated with z-index)
+    Absolute positions inside the last non static parent/grandparent, if all parents are static it will position relative to the body.
+*/
+
+#absoluteParentWrapper {
+    position: relative;
+}
+
+#absoluteParent {
+    position: static;
+    width: 500px;
+    height: 500px;
+}
+
+#absoluteChild {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    height: 30%;
+    width: 30%;
+}
+
+/* Fixed Positioning */
+/*
+    Stays fixed when scrolling 
+    Always positions relative to the body
+*/
+#fixedChild {
+    position: fixed;
+    width: 30%;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+#fixedChild li {
+    display: inline;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+
+/* Sticky Positioning */
+/* 
+    Hybrid between relative and fixed
+    When the element hits top: 0 (in the example - cardHeader) it will trun from relative to fixed
+*/
+.card {
+    width: 20%;
+    border: 2px solid black;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.cardHeader {
+    position: sticky;
+    top: 0;
+    border: 2px solid black;
+    background-color: darkcyan;
+}
+
+#stickyHeader {
+    position: sticky;
+    top: 0;
+    width: 30%;
+    height: 150px;
+    background-color: brown;
+    margin: 0 auto;
+}
+
+/* Float */
+/* float (right | left) - Most commonly used*/
+/* 
+    When floating an element, other elements wrap around it.
+    //unsplash.it/25(random number) - Finds random image (testing purposes) 
+*/
+#floatingBox {
+    float: left;
+}
+
+#floatingImg {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+#floatingSecondImg {
+    width: 150px;
+    height: 150px;
+    float: right;
+}

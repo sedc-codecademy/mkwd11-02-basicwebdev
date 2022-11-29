@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    background-color: aquamarine;
+    padding: 20px;
+    /* height: 60vh; */
+}
+
+.flexbox-item {
+    background-color: chocolate;
+    border: solid rgb(74, 87, 99) 4px;
+    margin: 20px;
+}
+
+.flexbox-item-1 {
+    min-height: 10vh;
+}
+
+.flexbox-item-2 {
+    min-height: 20vh;
+}
+
+.flexbox-item-3 {
+    min-height: 30vh;
+}

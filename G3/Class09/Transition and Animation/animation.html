@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+     body {
+            background: #000;
+          }
+     button{
+        width: 120px;
+        height:50px;
+        background-color:#444;;
+        border-top:3px solid orange;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1em;
+        color:white;
+        position:absolute;
+        left:50%;
+        top:50%;
+        /*Animation*/
+        animation-name: wiggle;
+        animation-duration: 2s;
+        /*animation-iteration-count: 2;*/
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        /*The transform CSS property lets you rotate, scale, skew, or translate an element. 
+          It modifies the coordinate space of the CSS visual formatting model.*/
+        /*The transform-origin CSS property sets the origin for 
+          an element's transformations.*/
+        /*The transform origin is the point around which a transformation is applied*/
+        /* x-offset | y-offset */
+        transform-origin: 50% 5em;
+     }
+
+     /*Key frames*/
+     @keyframes wiggle{
+        0%{
+            /*Specify when the style change will happen in percent, or with the 
+            keywords "from" and "to", which is the same as 0% and 100%. 
+            0% is the beginning of the animation, 100% is when the animation is complete.*/
+            /*The rotate() CSS function defines a transformation that rotates 
+            an element around a fixed point on the 2D plane, without deforming it. 
+            Its result is a <transform-function> data type.*/
+
+            /*
+            The rotateZ() CSS function defines a transformation 
+            that rotates an element around the z-axis without deforming it.
+            */
+
+            /*
+            The amount of rotation created by rotateZ() is specified by an <angle>. If positive, 
+            the movement will be clockwise; if negative, it will be counter-clockwise.
+            */
+            transform: rotateZ(0);
+        }
+        15%{
+            transform: rotateZ(-15deg);
+        }
+        20%{
+            transform: rotateZ(10deg);
+        }
+        25%{
+            transform: rotatez(-10deg);
+        }
+        30%{
+            transform: rotateZ(6deg);
+        }
+        35%{
+            transform: rotateZ(-4deg);
+        }
+        40%,100%{
+            transform:rotateZ(0);
+        }
+     }
+    </style>
+</head>
+<body>
+    <button>Save</button>
+</body>
+</html>
