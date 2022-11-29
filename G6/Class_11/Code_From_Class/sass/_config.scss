@@ -1,0 +1,23 @@
+
+
+
+%button {
+    margin: 5px 10px;
+    padding: 5px;
+    border: 1px solid red;
+    background-color: white;
+}
+
+@function generate-background-color($number) {
+    @if ($number > 1) {
+        @return orange;
+    } @else {
+        @return green
+    }
+
+};
+
+@mixin set-display-flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}

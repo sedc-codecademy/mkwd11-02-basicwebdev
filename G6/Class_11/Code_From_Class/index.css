@@ -1,0 +1,29 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+
+.prod {
+    width: 300px;
+}
+
+.mini-container {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+button {
+    margin: 5px 10px;
+    padding: 5px;
+    border: 1px solid red;
+    background-color: white;
+    color: red
+}

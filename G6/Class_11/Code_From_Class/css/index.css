@@ -1,0 +1,61 @@
+.secondary, .primary {
+  margin: 5px 10px;
+  padding: 5px;
+  border: 1px solid red;
+  background-color: white;
+}
+
+body {
+  background-color: green;
+  color: orange;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+}
+
+.prod {
+  width: 300px;
+}
+
+.mini-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.primary {
+  color: red;
+}
+
+.secondary {
+  color: blue;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: aqua;
+}
+
+@media screen and (max-width: 700px) {
+  .mini-container {
+    flex-direction: column;
+    background-color: aqua;
+  }
+}

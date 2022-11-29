@@ -1,0 +1,51 @@
+@import "config";
+@import "variables";
+
+body {
+    background-color: generate-background-color(1);
+    color: generate-background-color(2)
+}
+
+.container {
+    @include set-display-flex(column);
+    border: 1px solid grey;
+}
+
+.prod {
+    width: 300px;
+}
+
+.mini-container {
+    @include set-display-flex(row);
+}
+
+.buttons {
+    @include set-display-flex(row);
+    justify-content: center;
+}
+.primary {
+    @extend %button;
+    color: red;
+}
+
+.secondary {
+    @extend %button;
+    color: blue;
+}
+
+nav {
+    @include set-display-flex(row);
+    ul {
+        @include set-display-flex(row);
+        li {
+            text-decoration: none;
+            padding: 5px 15px;
+            color: $primary-color
+        }
+    }
+}
+
+@import "mobile";
+
+
+
