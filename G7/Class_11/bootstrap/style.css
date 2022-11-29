@@ -1,0 +1,12 @@
+.myCostumColor {
+  background-color: teal;
+}
+
+/* bootstrap class */
+/* .bg-light {
+  background-color: teal !important;
+} */
+
+.container {
+  margin-top: 40px;
+}

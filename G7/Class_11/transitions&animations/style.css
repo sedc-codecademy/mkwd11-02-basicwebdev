@@ -1,0 +1,96 @@
+/* SIMPLE TRANSITION */
+
+#box1 {
+  width: 150px;
+  height: 150px;
+  background-color: turquoise;
+  position: relative;
+
+  /* NEW TRASITIONS PROPS */
+
+  /* transition properties  */
+  /* transition-property: background-color, width, box-shadow; */
+  transition-property: all;
+  /* trasition duration 1000ms = 1s */
+  transition-duration: 1000ms;
+  /* timing */
+  /* transition-timing-function: ease; */
+  /* transition-timing-function: ease-in-out; */
+  transition-timing-function: cubic-bezier(0.33, 1.18, 0.06, 0.91);
+}
+
+#box1:hover {
+  background-color: blueviolet;
+  width: 350px;
+  box-shadow: 4px 2px 4px 3px blue;
+  transform: rotate(180deg);
+  height: 200px;
+}
+
+p {
+  transition-property: all;
+  transition-duration: 1000ms;
+  position: absolute;
+  top: 0;
+}
+
+#box1:hover p {
+  transform: rotate(180deg);
+}
+
+/* SIMPLE ANIMATION */
+
+.myBox {
+  background-color: darkcyan;
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+
+.movingBox {
+  width: 80px;
+  height: 80px;
+  background-color: brown;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.myBox .movingBox {
+  animation-name: my-moving-box;
+  animation-duration: 5000ms;
+  animation-timing-function: ease-in;
+  animation-delay: 500ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes my-moving-box {
+  0% {
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    /* calc will do a math. expression for u
+    in our case it will take 80px out of 100% =)
+    so the moving box will never leave it's parent */
+    left: calc(100% - 80px);
+    /* left: 84%; */
+    background-color: yellow;
+  }
+  50% {
+    top: calc(100% - 80px);
+    left: calc(100% - 80px);
+    background-color: green;
+  }
+  75% {
+    top: calc(100% - 80px);
+    left: 0;
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+}
