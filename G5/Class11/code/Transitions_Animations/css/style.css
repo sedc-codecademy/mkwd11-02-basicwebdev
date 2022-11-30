@@ -1,0 +1,110 @@
+body {
+    height: 2000px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin:50px 0 0 50px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 100px;
+
+    /* mandatory properties */
+    transition-property: background-color, border-radius, transform;
+    transition-duration: 3s;
+
+    /* optional properties*/
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+
+    /* Shorthand properties & webkits */
+
+    -webkit-transition: all 3s ease-out 1s;
+    -moz-transition: all 3s ease-out 1s;
+    -ms-transition:  all 3s ease-out 1s;
+    transition: all 3s ease-out 1s;
+}
+
+.box:hover {
+    background-color: red;
+    border-radius: 50px;
+
+    /*transfor-property */
+    transform: rotate(-180deg) scale(2);
+}
+
+
+.stage {
+    width: 500px;
+    height: 300px;
+    background-color: lightskyblue;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+    position: absolute;
+
+    /* Animation */
+    animation-name: slide;
+    animation-duration: 5s;
+
+    /* optional properties */
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+
+    /*shorthand writhing */
+    animation: slide 5s ease-out infinite alternate forwards;
+
+}
+
+.stage:active .ball {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    50% {
+        top: 250px;
+        left: 225px;
+        background-color: green;
+    }
+    100% {
+        top: 0px;
+        left: 450px;
+    }
+}
+
+
+/* scrolbar */
+
+::-webkit-scrollbar {
+    width: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background: green;
+}
+
+::-webkit-scrollbar-thumb {
+    background: orange;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: blue;
+}
+
