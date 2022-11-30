@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style type="text/css">
+        h1{
+            color:magenta;
+            font-size:10rem;
+        }
+
+        h2{
+            color:pink;
+            font-size:6rem;
+        }
+
+        @media print{
+
+            h1, h2{color:black;}
+        }
+
+        @media screen and (max-width:500px)
+        {
+            h1{
+                color:green;
+                font-size:7rem;
+            }
+
+            h2{
+                color:greenyellow;
+                font-size:3rem;
+            }
+        }
+        @media screen and (min-width:500px) and (max-width:800px)
+        {
+            h1{
+                color:darkblue;
+                font-size:11rem;
+            }
+
+            h2{
+                color:blue;
+                font-size:8rem;
+            }
+        }
+
+        @media screen and (orientation:landscape)
+        {
+            h1,h2{
+                color:red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h2>My name is Dana</h2>
+</body>
+</html>
