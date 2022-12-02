@@ -1,0 +1,12 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body {
+    margin-left: 10px;
+}
+
+.last-card {
+    margin-top: 20px;
+}

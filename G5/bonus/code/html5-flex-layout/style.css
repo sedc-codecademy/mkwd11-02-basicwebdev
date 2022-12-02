@@ -1,0 +1,122 @@
+/* 
+	Main style
+	Author: SEDC Ninja K. Team;
+	1. header
+		1.1 desktop
+	2. content
+		2.1 desktop
+	3. footer
+	4. aside
+*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto; 
+}
+
+/* 1. Header */
+.header {
+	background: rgba(0,0,0, .8);
+	padding: 15px;
+}
+
+.header-logo {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+}
+
+.nav-list {
+	list-style: none;
+	padding: 0;
+}
+
+.nav-list a {
+	display: block;
+	color: #fff;
+	padding: 10px 15px;
+	border: 1px solid #fff;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+/* 2. Content */
+.column {
+	margin-bottom: 15px;
+}
+
+.btn-default {
+	display: block;
+	background: tomato;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 2px;
+	box-shadow: 3px -3px 4px #ddd;
+}
+
+/* 3. Footer */
+.footer {
+	margin-top: 15px;
+	padding: 15px;
+	background: rgba(0,0,0, .8);
+	color: #fff;
+	text-align: center;
+}
+
+.footer a {
+	color: #fff;
+}
+
+/* 4. Aside */
+.sidebar-list {
+	list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+	/* 1.1 header desktop */
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav-list {
+		display: flex;
+		margin: 0;
+	}
+
+	.nav-list li {
+		margin-right: 5px;
+	}
+
+	.nav-list a {
+		margin-bottom: 0;
+	}
+
+	/* 2.1 content desktop */
+	.main {
+		display: flex;
+	}
+
+	.content {
+		width: calc(100% - 320px);
+	}
+
+	.column {
+		margin-right: 15px;
+	}
+
+	.sidebar {
+		width: 320px;
+	}
+
+	.row {
+		display: flex;
+	}
+}
